@@ -1,0 +1,98 @@
+.detail__container {
+  font-family: $font-prin;
+  font-size: 1.4rem;
+  font-weight: 400;  
+  display: flex;
+  flex-direction: column;  
+  margin-top: 15rem;
+}
+
+.detail__info {
+    width: min(95%, 1157px);
+    padding: 0 8rem;
+    display: grid;
+    grid-template-columns: 50% 1fr;
+    column-gap: 4rem;
+    
+  @include from(t) {
+    display: flex;
+    flex-direction: column;
+    padding: 0 4rem;
+    gap: 4rem;
+  }
+
+  @include from(mobl) {
+    padding: 0 2rem;
+  }
+
+}
+
+
+
+.detail__title {
+  font-size: 6.8rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+.detail__vertical-line {
+  width: 2px;
+  height: 4rem;
+  background-color: var(--main-color);
+}
+
+.detail__area {
+  font-weight: 600;
+}
+
+.detail__element {
+  font-weight: 400;
+}
+
+
+.detail__gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem; 
+  width: 100%;
+  margin-top: 10rem;
+  padding: 0 8rem;
+
+  @include from(t) {
+      padding: 0 4rem;
+    }
+
+  @include from(mobl) {
+      padding: 0 2rem;
+      gap: 2rem;
+    }
+}
+
+.detail__image {
+  width: 100%;
+  height: 100%;
+  animation-delay: .75s;  
+}
+
+.detail__pic {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.detail__share {
+  a {
+    color: var(--main-color);
+    margin-left: 1rem;
+    &:hover  {
+      color: var(--accent-color);
+    }
+  }
+}
+
+
+.description {
+  font-size: 1.6rem;
+  width: 90%;
+}
+

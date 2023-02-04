@@ -1,0 +1,113 @@
+.contact__section {
+  margin-top: 10rem;    
+}
+
+.contact__container { 
+  height: 100%;
+  width: 100%;
+  padding-left: 20%;
+  font-family: $font-prin;
+
+  @include from (t) {
+    padding-left: 0;
+  }
+
+}
+
+.contact__header {
+  padding-top: .5rem;
+}
+
+
+.form__section {
+  display: grid;
+  grid-template-columns: 1fr 30%;
+  margin-top: 0;
+
+  @include from(t) {
+      display: flex;
+      flex-direction: column;    
+    }
+
+}
+
+.contact__title {
+  font-family: $font-prin;
+  margin-bottom: 0;
+  margin-left: -8.2rem;
+  margin-top: 6rem;
+  font-weight: 500;
+  font-size: var(--title-font-size);
+  white-space: nowrap;
+
+  @include from(t) {
+    margin-left: 3rem;
+  }
+
+  span {
+    opacity: .3;
+
+  @include from(t) {
+    display: none;
+  }
+
+  }
+}
+
+.contact__tagline {
+  margin-top: 1rem;
+  margin-bottom: 0;
+  margin-left: 1rem;
+  font-size: 2.4rem;
+  font-weight: 400;
+  width: 50%;
+  opacity: .7;
+
+  @include from(ds) {
+    font-size: 2rem;
+    width: 70%;
+   }
+
+   @include from(t) {
+    margin-left: 3rem;
+   }
+
+}
+
+.form__inputs {
+  
+  @include from(t) {
+    width: 100%;
+    margin-right: 2rem;
+  }
+}
+
+.contact__info {
+  font-size: 2.4rem;
+  font-weight: 500;
+  margin-left: -10rem;
+  
+  @include from(dl) {
+    margin-left: -7rem;
+    font-size: 2rem;
+  }
+   @include from(ds) {
+    margin-left: -6rem;    
+  }
+
+  @include from(t) {
+    margin-left: 3rem;
+  }
+
+  span {
+    display: block;
+
+  &:first-of-type {
+    margin-top: 4rem;
+  }    
+
+  }
+  
+
+
+}

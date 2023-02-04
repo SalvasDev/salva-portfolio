@@ -1,0 +1,56 @@
+.index__bar {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    gap: 3.2rem;
+    top: 35rem;
+    right: 4rem;  
+    z-index: 100;
+    
+    @include from(dl)  {
+       display: none;
+    }
+}
+
+
+.index {
+    display: flex;
+    flex-direction: column;
+    font-family: $font-prin;
+    font-size: 1.8rem;
+    text-align: right;
+    font-weight: 500;
+    gap: 2rem;
+    color: var(--main-color);    
+}
+
+.index a {
+    color: var(--main-color);
+
+    &:hover {
+        color: var(--accent-color);
+    }
+}
+
+.progress__bar {
+    height: 23rem;
+    width: .3rem;
+    background-color: var(--main-color);
+}
+
+.selected {
+    position: relative;
+    
+    &::after {
+        content: '';
+        position: absolute;
+        top: -.9rem;
+        left: 7.5rem;
+        height: 165%;
+        width: 3px;
+        background-color: var(--accent-color);
+        opacity: 1;
+        transition: all 200ms ease;
+    }
+
+} 

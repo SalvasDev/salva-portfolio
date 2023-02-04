@@ -1,0 +1,57 @@
+$font-prin: 'poppins', sans-serif;
+
+
+$breakpoints: (
+  dl: 1280px,
+  dm: 1024px,
+  ds: 900px,
+  t: 768px,
+  ts: 640px,
+  mobl: 490px,
+  mob: 375px
+);
+
+
+
+:root {
+  --bg-color: white;
+  --bg-color-sec: #F4F4F4;
+  --bg-color-terc: #414040;
+  --main-color: #434343;
+  --main-text-color: black;
+  --negative-color: white;
+  --accent-color: #20EEE2;
+  --secondary-color: #9C9C9C;
+  --radius: 1rem;
+  --icons: brightness(0) saturate(100%) invert(0%) sepia(0%) saturate(23%) hue-rotate(123deg) brightness(98%) contrast(96%);
+  --icons-negative: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7500%) hue-rotate(318deg) brightness(111%) contrast(100%);
+  --title: #000000;
+  --accent-filter: brightness(0) saturate(100%) invert(85%) sepia(88%) saturate(6241%) hue-rotate(123deg) brightness(96%) contrast(94%);
+  --arrow-filter: brightness(0) saturate(100%) invert(36%) sepia(75%) saturate(30%) hue-rotate(16deg) brightness(100%) contrast(100%);
+  --main-sections-text-color: black;
+}
+
+// Variables de apilamiento (z-index)
+:root {
+  --z-back: -10;
+  --z-normal: 1;
+  --z-tooltip: 10;
+  --z-fixed: 100;
+  --z-modal: 1000;
+}
+
+// Variables de tamaños en tipografía
+:root {
+    --main-font-size: 13rem
+    --body-font-size: 1.8rem;
+    --title-font-size: 5.8rem;
+    --subtitles-font-size: 3.2rem;
+    --p-font-size: 1.6rem;
+    --small-font-size: .8rem;
+    
+    @media screen and (max-width: 76.8rem  ) {
+      --main-font-size: 10rem;
+    }
+}
+
+

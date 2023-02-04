@@ -1,0 +1,75 @@
+.formulario {
+  margin-top: 2rem;
+  margin-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+
+  @include from(t) {
+    padding-right: 3rem;
+    padding-left: 2rem;
+  }
+
+ 
+
+  label {
+    font-size: 1.6rem;
+    display: block;
+    color: var(--main-color);  
+  }
+
+  input {
+    height: 2.4rem;
+    color: var(--main-color);
+  }
+
+  input, textarea {
+    display: block;
+    margin-top: .5rem;
+    font-family: $font-prin;
+    font-size: 1.6rem;
+    background-color: transparent;
+    width: 80%;
+    border: 1px solid var(--secondary-color);
+    border-radius: .4rem;
+    padding: 2rem 1rem;
+    color: var(--main-color);
+
+    @include from(t) {
+        width: 100%;
+      }
+  }
+
+}
+
+.form__button {
+  width: 80%;
+      @include from(t) {
+        width: 100%;
+      }
+}
+
+.btn__send {
+  display: block;
+  width: 13rem;
+  height: 3.8rem;
+  margin: 2rem 0 0 auto;
+  border: none;
+  background-color: var(--accent-color);
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-weight: 500;
+  border-radius: 2.4rem;
+  cursor: pointer;
+  color: black;
+
+    @include from(t) {
+        margin-left: auto;
+        margin-right: 0;
+      }
+  
+  &:hover {
+    background-color: aquamarine;
+  }
+
+}

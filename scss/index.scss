@@ -1,0 +1,28 @@
+
+//Variables
+@import './config/variables';
+
+//Config
+@import './config/mixins';
+
+//Base
+@import './base/base';
+
+//Components
+@import './components/header';
+@import './components/btnBurger';
+@import './components/hero';
+@import './components/socialbar';
+@import './components/indexbar';
+@import './components/services';
+@import './components/projects';
+@import './components/gallery';
+@import './components/about';
+@import './components/contact';
+@import './components/footer';
+@import './components/form';
+@import './components/detail';
+
+// Layouts
+@import '../layouts/BasicLayout/BasicLayout.scss';
+

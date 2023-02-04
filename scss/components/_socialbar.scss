@@ -1,0 +1,28 @@
+.social__bar {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    left: 4rem;
+    top: 36rem;
+    gap: 2rem;
+    z-index: 100;
+
+    img:hover {
+        filter: var(--accent-filter)
+    }
+   
+    @include from(dl) {
+        display: none;
+    }
+}
+
+.follow {
+    writing-mode: vertical-rl;
+    font-family: $font-prin;
+    text-orientation: mixed;
+    font-weight: 500;
+    font-size: 1.8rem;
+}
+
+
