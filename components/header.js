@@ -14,7 +14,7 @@ import { positionAnchor } from '../helpers/positionAnchor'
 const avertaReg = localFont({src:'../assets/fonts/Averta-Regular.woff'})
 
 
-export default function Header() {
+export default function Header({closeMenu}) {
 
   const [checked, setChecked] = useState(false)
 
@@ -68,11 +68,11 @@ export default function Header() {
       {/* Header section */}
       <section className="header__section center" id='start'>      
 
-        <a href="/"> 
+        <Link href="/"> 
           <div className="logo">
             <Image className="logo__paralel" width='90' src={logo} alt='Logotype paralel' />
           </div>
-        </a>
+        </Link>
 
         <div className="main__menu">
           <p className="menu__title">menú</p>
@@ -92,12 +92,12 @@ export default function Header() {
         </div>
 
          {/* Menu mobile */}
-        <nav className="showMenuMobile " id='showMenuMobile' onClick={handleBurger}>
-          <a  href='/' className="animate__animated animate__slideInDown">Inicio</a>
-          <a  href="/#services"className="animate__animated animate__slideInDown">Servicios</a>
-          <a  href="/#projects"className="animate__animated animate__slideInDown">Proyectos</a>
-          <a href="/#about"className="animate__animated animate__slideInDown">Nosotros</a>
-          <a  href="/#contact"className="animate__animated animate__slideInDown">Contacto</a>
+        <nav className="showMenuMobile " id='showMenuMobile' onClick= { handleBurger } >
+          <Link  href='/' className="animate__animated animate__slideInDown">Inicio</Link>
+          <Link  href="/#services"className="animate__animated animate__slideInDown">Servicios</Link>
+          <Link  href="/#projects"className="animate__animated animate__slideInDown">Proyectos</Link>
+          <Link href="/#about"className="animate__animated animate__slideInDown">Nosotros</Link>
+          <Link  href="/#contact"className="animate__animated animate__slideInDown">Contacto</Link>
         </nav>
         
         {/* Theme lets talk group */}

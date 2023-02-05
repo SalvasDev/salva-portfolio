@@ -8,7 +8,7 @@ export default function BasicLayout(props) {
   return (
     <>
       <div>
-        <Header/>
+        <Header />
       </div>
       { children }
       <Footer />

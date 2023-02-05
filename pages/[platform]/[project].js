@@ -12,8 +12,6 @@ export default function Project() {
 const found = dbProjects.find(element => (element?.name === project && element?.area === platform));
 var htmlContent = { __html: found?.description };
 
-var closeMenu
-
   return (
     <>
     <Head>      
@@ -21,8 +19,8 @@ var closeMenu
         {project} | {platform}
       </title>
     </Head>
-
-    <BasicLayout closeMenu = 'false' >
+    
+    <BasicLayout>
     <div className="detail__container center">      
       <section className="detail__info center">
         <div className="detail__data animate__animated animate__fadeInLeft">

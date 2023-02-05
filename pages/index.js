@@ -8,7 +8,6 @@ import { IndexContextProvider } from '../context/IndexContext'
 import Services from '../components/services'
 import Projects from '../components/projects'
 import Contact from '../components/contact'
-import Footer from '../components/footer'
 import About from '../components/about'
 import 'animate.css'
 
