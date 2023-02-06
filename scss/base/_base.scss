@@ -29,9 +29,10 @@ img {
 
 @media(prefers-color-scheme: dark) {
   body:not(.force-light) {
-    --bg-color: #142450;
-    --bg-color-terc: black;
+    --bg-color: #0C152D;
+    --bg-color-terc: #071848;
     --main-color: white;  
+    --bg-color-sec: #071848;
     --icons: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7500%) hue-rotate(318deg) brightness(111%) contrast(100%);
     --title: var(--accent-color);
     --main-sections-text-color: var(--accent-color);
