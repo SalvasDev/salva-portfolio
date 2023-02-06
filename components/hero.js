@@ -4,7 +4,7 @@ import Image from 'next/image'
 import localFont from '@next/font/local'
 import gradients from '../assets/img/gradients-shape.png'
 
-const avertaBold = localFont({src:'../assets/fonts/averta-Bold.woff'})
+const avertaBold = localFont({src:'../assets/fonts/Averta-Bold.woff'})
 const avertaReg = localFont({src:'../assets/fonts/Averta-Regular.woff'})
 
 export default function Hero() {
