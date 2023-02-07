@@ -47,7 +47,7 @@ export const dbProjects = [
       '/img/carlotta/descanso5.png',
       '/img/carlotta/botellas.png'
     ],
-    description: "<p>Innovarte es una empresa de consultoría ubicada en la Ciudad de México. <br/> <Innovarte se dedicada a asesorar a empresas para genera innovación                  en el interior de éstas a través del intraenprendedurismo.<br/><br/>Utiliza los recursos humanos internos de cada corporación con la finalidad de desarrollar nuevos productos a partir de la experiencia del personal capacitado de la misma empresa.<br/><br/>Toda la información que se genera lleva una alta responsabilidad con el medio ambiente.</p>" ,
+    description: "<p><strong>Carlotta</strong> es un restaurante ubicado en la ciudade de Morelia. <br/> <Carlotta ofrece almuerzos y comidas con recetas saludables y gourmet en un ambiente confortable.</p>",
     code: '',
     demo:''
   },
