@@ -68,7 +68,7 @@ export default function Header({closeMenu}) {
       {/* Header section */}
       <section className="header__section center" id='start'>      
 
-        <Link href="/"> 
+        <Link href="https://odissy-web.vercel.app/"> 
           <div className="logo">
             <Image className="logo__paralel" width='90' src={logo} alt='Logotype paralel' />
           </div>
@@ -93,7 +93,7 @@ export default function Header({closeMenu}) {
 
          {/* Menu mobile */}
         <nav className="showMenuMobile " id='showMenuMobile' onClick= { handleBurger } >
-          <Link  href='/' className="animate__animated animate__slideInDown">Inicio</Link>
+          <Link  href='https://odissy-web.vercel.app/' className="animate__animated animate__slideInDown">Inicio</Link>
           <Link  href="/#services"className="animate__animated animate__slideInDown">Servicios</Link>
           <Link  href="/#projects"className="animate__animated animate__slideInDown">Proyectos</Link>
           <Link href="/#about"className="animate__animated animate__slideInDown">Nosotros</Link>
