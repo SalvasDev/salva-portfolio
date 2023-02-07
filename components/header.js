@@ -14,7 +14,7 @@ import { positionAnchor } from '../helpers/positionAnchor'
 const avertaReg = localFont({src:'../assets/fonts/Averta-Regular.woff'})
 
 
-export default function Header({closeMenu}) {
+export default function Header() {
 
   const [checked, setChecked] = useState(false)
 
@@ -93,11 +93,11 @@ export default function Header({closeMenu}) {
 
          {/* Menu mobile */}
         <nav className="showMenuMobile " id='showMenuMobile' onClick= { handleBurger } >
-          <Link href='https://odissy-web.vercel.app/' className="animate__animated animate__slideInDown">Inicio</Link>
-          <Link href="/#services"className="animate__animated animate__slideInDown">Servicios</Link>
+          <a href='/' className="animate__animated animate__slideInDown">Inicio</a>
+          <a href="/#services"className="animate__animated animate__slideInDown">Servicios</a>
           <a href="/#projects"className="animate__animated animate__slideInDown">Proyectos</a>
-          <Link href="/#about"className="animate__animated animate__slideInDown">Nosotros</Link>
-          <Link href="/#contact"className="animate__animated animate__slideInDown">Contacto</Link>
+          <a href="/#about"className="animate__animated animate__slideInDown">Nosotros</a>
+          <a href="/#contact"className="animate__animated animate__slideInDown">Contacto</a>
         </nav>
         
         {/* Theme lets talk group */}
