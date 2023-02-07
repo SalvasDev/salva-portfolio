@@ -68,7 +68,7 @@ export default function Header() {
       {/* Header section */}
       <section className="header__section center" id='start'>      
 
-        <Link href="https://odissy-web.vercel.app/"> 
+        <Link href="/"> 
           <div className="logo">
             <Image className="logo__paralel" width='90' src={logo} alt='Logotype paralel' />
           </div>
