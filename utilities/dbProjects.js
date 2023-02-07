@@ -36,16 +36,16 @@ export const dbProjects = [
     [ 
       '/img/carlotta/intro.png',
       '/img/carlotta/descanso1.png',
-      '/img/carlotta/Bodegon1.png',
+      '/img/carlotta/bodegon1.png',
       '/img/carlotta/descanso2.png',   
-      '/img/carlotta/Card-on-plate.png',         
+      '/img/carlotta/card-on-plate.png',         
       '/img/carlotta/descanso3.png',
       '/img/carlotta/menus-par.png',
       '/img/carlotta/menu-porta.png',
       '/img/carlotta/descanso4.png',
       '/img/carlotta/mandil.png',
       '/img/carlotta/descanso5.png',
-      '/img/carlotta/Botellas.png'
+      '/img/carlotta/botellas.png'
     ],
     description: "<p>Innovarte es una empresa de consultoría ubicada en la Ciudad de México. <br/> <Innovarte se dedicada a asesorar a empresas para genera innovación                  en el interior de éstas a través del intraenprendedurismo.<br/><br/>Utiliza los recursos humanos internos de cada corporación con la finalidad de desarrollar nuevos productos a partir de la experiencia del personal capacitado de la misma empresa.<br/><br/>Toda la información que se genera lleva una alta responsabilidad con el medio ambiente.</p>" ,
     code: '',
@@ -129,7 +129,7 @@ export const dbProjects = [
 
 
    ////////////////////////////////////////////////////////////////////////////////
-  // Database for diseño
+  // Database for design
    
   {
     id: '1001',

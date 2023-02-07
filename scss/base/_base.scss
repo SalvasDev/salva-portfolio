@@ -13,6 +13,7 @@ html {
 body {
   margin: 0;
   padding: 0;
+  font-family: $font-prin;
   font-size: var(--body-font-size);
   overflow: scroll;
   background-color: var(--bg-color);
@@ -86,7 +87,7 @@ button {
   height: .5rem;
   margin-left: 1rem;
   background-color: var(--accent-color);
-  margin-top: 3rem;
+  margin-top: 5rem;
 
   @include from(t) {
       margin-left: 0;
