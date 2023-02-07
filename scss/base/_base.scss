@@ -55,6 +55,7 @@ body.force-dark {
 body.force-light {
   --bg-color: white;
   --main-color: #00242A;
+  --title: var(--main-color);
   --icons: brightness(0) saturate(100%) invert(0%) sepia(0%) saturate(23%) hue-rotate(123deg) brightness(98%) contrast(96%);
 }   
 
