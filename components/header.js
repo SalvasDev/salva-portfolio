@@ -93,7 +93,7 @@ export default function Header() {
 
          {/* Menu mobile */}
         <nav className="showMenuMobile " id='showMenuMobile' onClick= { handleBurger } >
-          <Link href='https://odissy-web.vercel.app/' className="animate__animated animate__slideInDown">Inicio</Link>
+          <Link href='/' className="animate__animated animate__slideInDown">Inicio</Link>
           <Link href="/#services"className="animate__animated animate__slideInDown">Servicios</Link>
           <Link href="/#projects"className="animate__animated animate__slideInDown">Proyectos</Link>
           <Link href="/#about"className="animate__animated animate__slideInDown">Nosotros</Link>
