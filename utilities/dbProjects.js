@@ -115,15 +115,12 @@ export const dbProjects = [
       '/img/edie/edie-projects1.png',
       '/img/edie/edie-projects2.png',
       '/img/edie/edie-team.png',
-      '/img/edie/edie-footer.png' 
-
-   
+      '/img/edie/edie-footer.png'    
     ],
     description: "<p><strong>Edie homepage</strong> es una landing page experimental desarrollada para demostrar el manejo del código de programación <br/> <br/> Para su realiazación se utilizaron diferentes tecnologías como: HTML5, CSS3 y JavaScript. <br/> <br/> Esta landing page muestra el manejo del diseño responsivo.</p>", 
     code:'https://github.com/SalvasDev/mntn',
     demo:'https://mntn-sal.netlify.app/'    
   },
-
 
 
 
