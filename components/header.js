@@ -93,11 +93,11 @@ export default function Header({closeMenu}) {
 
          {/* Menu mobile */}
         <nav className="showMenuMobile " id='showMenuMobile' onClick= { handleBurger } >
-          <Link  href='https://odissy-web.vercel.app/' className="animate__animated animate__slideInDown">Inicio</Link>
-          <Link  href="/#services"className="animate__animated animate__slideInDown">Servicios</Link>
-          <Link  href="/#projects"className="animate__animated animate__slideInDown">Proyectos</Link>
+          <Link href='https://odissy-web.vercel.app/' className="animate__animated animate__slideInDown">Inicio</Link>
+          <Link href="/#services"className="animate__animated animate__slideInDown">Servicios</Link>
+          <a href="/#projects"className="animate__animated animate__slideInDown">Proyectos</a>
           <Link href="/#about"className="animate__animated animate__slideInDown">Nosotros</Link>
-          <Link  href="/#contact"className="animate__animated animate__slideInDown">Contacto</Link>
+          <Link href="/#contact"className="animate__animated animate__slideInDown">Contacto</Link>
         </nav>
         
         {/* Theme lets talk group */}
