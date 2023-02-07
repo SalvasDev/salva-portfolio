@@ -9,7 +9,6 @@ export default function Gallery({ typeGallery }) {
   
   return (
     <div className="gallery">
-      { console.log(foundGallery)}
       { 
         foundGallery.map(project => (
           <Thumbnail 
