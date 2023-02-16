@@ -26,7 +26,6 @@ function showingMenu() {
   const contMenu = document.getElementById('menu__bg');
   const showMenu = document.getElementById('showMenuMobile');
   const mainHeader = document.getElementById('start');
-  var bodyControl = document.querySelector('body');
 
   contMenu.classList.toggle('active__container');
   showMenu.classList.toggle('active__menu');

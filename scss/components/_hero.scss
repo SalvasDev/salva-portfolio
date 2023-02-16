@@ -28,6 +28,7 @@
 .main__title {
   font-size: calc(95px + (130 - 95) * ((100vw - 375px) / (1920 - 300)));
   line-height: 11rem;
+  font-family: 'AvertaBold', 'Poppins', sans-serif;
   font-weight: 600;
   margin: 0;  
   color: var(--title);
@@ -50,6 +51,7 @@
 }
 
 .main__subtitle {
+  font-family: 'AvertaReg', 'Poppins', sans-serif;
   font-weight: 500;
   font-size: 3.2rem;  
   letter-spacing: 4px;
