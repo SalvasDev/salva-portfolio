@@ -92,12 +92,19 @@ export default function Header() {
         </div>
 
          {/* Menu mobile */}
-        <nav className="showMenuMobile " id='showMenuMobile' onClick= { handleBurger } >
+        {/* <nav className="showMenuMobile " id='showMenuMobile' onClick= { handleBurger } >
           <Link href='/' className="animate__animated animate__slideInDown">Inicio</Link>
           <Link href="/#services"className="animate__animated animate__slideInDown">Servicios</Link>
           <Link href="/#projects"className="animate__animated animate__slideInDown">Proyectos</Link>
           <Link href="/#about"className="animate__animated animate__slideInDown">Nosotros</Link>
           <Link href="/#contact"className="animate__animated animate__slideInDown">Contacto</Link>
+        </nav> */}
+                <nav className="showMenuMobile " id='showMenuMobile' onClick= { handleBurger } >
+          <Link href='https://odissy.vercel.app/' className="animate__animated animate__slideInDown">Inicio</Link>
+          <Link href="https://odissy.vercel.app/#services"className="animate__animated animate__slideInDown">Servicios</Link>
+          <Link href="https://odissy.vercel.app/#projects"className="animate__animated animate__slideInDown">Proyectos</Link>
+          <Link href="https://odissy.vercel.app/#about"className="animate__animated animate__slideInDown">Nosotros</Link>
+          <Link href="https://odissy.vercel.app/#contact"className="animate__animated animate__slideInDown">Contacto</Link>
         </nav>
         
         {/* Theme lets talk group */}
