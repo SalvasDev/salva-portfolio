@@ -4,7 +4,7 @@ import { useRouter } from 'next/router'
 import Head from 'next/head'
 import BasicLayout from '../../layouts/BasicLayout/BasicLayout'
 import { dbProjects } from '../../utilities/dbProjects'
-import 'animate.css'
+// import 'animate.css'
 
 
 export default function Project() {
