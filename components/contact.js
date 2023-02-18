@@ -19,7 +19,7 @@ export default function Contact() {
 
           <div className="contact__info">
             <span>443 238 2668</span>
-            <span>hola@paralelag.com</span>
+            <span>hola@odissy.com</span>
             <span>Morelia, México</span>
           </div>
 

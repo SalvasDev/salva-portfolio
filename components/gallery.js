@@ -5,9 +5,11 @@ import Thumbnail from './thumbnail'
 
 export default function Gallery({ typeGallery }) {
 
-  const foundGallery = dbProjects.filter(projects => projects.area == typeGallery);
+  const foundGallery = typeGallery === 'todo' ? dbProjects : dbProjects.filter(projects => projects.area == typeGallery);
+  
   
   return (
+    
     <div className="gallery">
       { 
         foundGallery.map(project => (

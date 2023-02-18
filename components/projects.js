@@ -24,6 +24,13 @@ export default function Projects() {
           <div className="projects__labels">
             <button 
               className="projects__btn"
+              style={ typeGallery === 'todo' ? { background: bgColor, borderColor: borderColor, color: color } : null}
+              onClick={(e) => {handleGallery(e, 'todo')}}
+            >
+            Todo
+            </button>  
+            <button 
+              className="projects__btn"
               style={ typeGallery === 'branding' ? { background: bgColor, borderColor: borderColor, color: color } : null}
               onClick={(e) => {handleGallery(e, 'branding')}}
             >

@@ -46,6 +46,7 @@
   gap: 3rem;
   margin-left: 0;
   margin-top: 3rem;
+  flex-wrap: wrap;
 
   @include from(dl) {
     margin-left: 10%;
@@ -62,6 +63,7 @@
   @include from(mobl) {
     margin-left: 1rem;
     margin-right: 2rem;
+    row-gap: 3rem;
   }
 
 }

@@ -39,7 +39,7 @@ export default function Footer() {
 
       </div>
       <div className="footer__copy-politics">
-        <p>© 2023 Odissy. All rights reserved.</p>
+        <p>© 2023 Odissy. Derechos reservados.</p>
         <a href="">Políticas de privacidad</a>
       </div>
     </section>
