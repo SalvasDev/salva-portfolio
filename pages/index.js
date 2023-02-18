@@ -1,5 +1,3 @@
-import Image from 'next/image'
-import Link from 'next/link'
 import BasicLayout from '../layouts/BasicLayout'
 import Hero from '../components/hero'
 import Socialbar from '../components/socialBar'

@@ -11,6 +11,9 @@
       width: 100%;
     }
 
+    @include from(mobl) {
+      margin-top: 10rem;
+    }
 }
 
 .hero__contain {
@@ -23,7 +26,6 @@
   }
 
 }
-
 
 .main__title {
   font-size: calc(95px + (130 - 95) * ((100vw - 375px) / (1920 - 300)));

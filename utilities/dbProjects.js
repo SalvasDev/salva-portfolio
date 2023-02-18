@@ -122,6 +122,25 @@ export const dbProjects = [
     demo:'https://mntn-sal.netlify.app/'    
   },
 
+  {
+    id: '103',
+    area: "web",
+    name: "Analytics",
+    designed: "Figma community",  
+    developed: "Salvador Sánchez",
+    thumbnail: "/img/analytics/thumb-analytics.png",
+    pics: 
+    [
+     '/img/analytics/lapandmov.png',
+      '/img/analytics/mob-hand.png',
+      '/img/analytics/tablet-hands.png',
+      '/img/analytics/mob-hand2.png',
+      '/img/analytics/analytics-deskhome2.png',   
+    ],
+    description: "<p><strong>Analytics</strong> es una landing page experimental desarrollada para demostrar el manejo del código de programación.<br/> <br/> Para su realiazación se utilizaron diferentes tecnologías como: HTML5, CSS modules, TypeScript, React. <br/> <br/> Esta landing page muestra el manejo del diseño responsivo.</p>", 
+    code:'https://github.com/SalvasDev/analytics',
+    demo:'https://analytics-sal.netlify.app/'    
+  },
 
 
 
