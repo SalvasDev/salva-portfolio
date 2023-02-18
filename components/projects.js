@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import Gallery from './gallery'
 
 export default function Projects() {
-  const [ typeGallery, setTypeGallery ] = useState('branding')
+  const [ typeGallery, setTypeGallery ] = useState('todo')
 
   const handleGallery = (e, typeGal) =>{
     e.preventDefault()
