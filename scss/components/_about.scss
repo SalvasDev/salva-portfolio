@@ -48,12 +48,10 @@
         }
 
         @include from(mobl) {
-            margin-bottom: 15rem;
+            margin-bottom: 28rem;
         }
 
-        @include from(mob) {
-           padding-bottom: 47rem;
-        }
+ 
 
 
     p {
