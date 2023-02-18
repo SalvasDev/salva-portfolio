@@ -1,8 +1,19 @@
 import React, { useState } from 'react'
 import { Formik, Form, Field, ErrorMessage } from 'formik'
+import emailjs from 'emailjs-com' 
 
 export default function FormContact() {
+
 const [formSent, setFormSent] = useState(false)
+
+// const sendEmail = (e) => {
+//   e.preventDefault()
+
+//   emailjs.sendForm('service_e0qslu8','template_qan882o',e.target,'user_jHm0qhPKtbcxBtkM0').then(res=>{
+//                 console.log(res);
+//             })
+// }
+
   return (
     <>
       <Formik
@@ -17,7 +28,7 @@ const [formSent, setFormSent] = useState(false)
         validate={(values) => {
           const errores = {}
 
-          //Validation for nombre
+          //Validation for name
           if (!values.nombre) {
             errores.nombre = 'por favor ingresa un nombre'
           } else if( !/^[a-zA-ZÀ-ÿ\s]{1,40}$/.test(values.nombre)) {
@@ -35,18 +46,21 @@ const [formSent, setFormSent] = useState(false)
           //Validation for telephone
           if (!values.telefono) {
             errores.telefono = 'por favor ingresa un número de teléfono'
-          } 
-         
-         
-          return errores
+          }          
+         return errores
         }}
           
 
 
-        onSubmit={ (values, {resetForm} ) => {
+        onSubmit={ (values, { sendEmail, resetForm } ) => {
+
+           emailjs.sendForm('service_e0qslu8','template_qan882o',e.target,'user_jHm0qhPKtbcxBtkM0').then(res=>{
+                console.log(res);
+            })
+
           resetForm()
-          console.log('Formulario enviado');
           setFormSent(true)
+
           setTimeout(() => setFormSent(false), 5000)
         }}
   
@@ -65,19 +79,7 @@ const [formSent, setFormSent] = useState(false)
                  <div className="error">{errors.nombre}</div>
               )}/> 
 
-            </div>           
-            {/* <div>
-              <label htmlFor='cargo'>Cargo</label>
-              <Field 
-                type="text" 
-                name='cargo'
-                id='cargo'
-              />
-              <ErrorMessage name='cargo'component={()=> (
-                 <div className="error">{errors.cargo}</div>
-              )}/> 
-
-            </div> */}
+            </div>                     
 
             <div>
               <label htmlFor='empresa'>Empresa</label>
