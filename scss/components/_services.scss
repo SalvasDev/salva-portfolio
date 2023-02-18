@@ -19,6 +19,7 @@
       padding-right: 0;
       padding-bottom: 10rem;
     }
+            
   
 }
 
@@ -42,12 +43,9 @@
   }
 
   @include from(mobl) {
-    margin-bottom: 60%;
+    margin-bottom: 32rem;
   }
 
-  @include from(mob) {
-    margin-bottom: 80%;
-  }
 
   p {
     width: 100%;
