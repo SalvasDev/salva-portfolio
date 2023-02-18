@@ -1,25 +1,16 @@
 import React, { useState } from 'react'
 import { Formik, Form, Field, ErrorMessage } from 'formik'
-import emailjs from 'emailjs-com' 
+import { sendEmail } from '../helpers/sendEmail'
 
 export default function FormContact() {
 
 const [formSent, setFormSent] = useState(false)
 
-// const sendEmail = (e) => {
-//   e.preventDefault()
-
-//   emailjs.sendForm('service_e0qslu8','template_qan882o',e.target,'user_jHm0qhPKtbcxBtkM0').then(res=>{
-//                 console.log(res);
-//             })
-// }
-
-  return (
+return (
     <>
       <Formik
         initialValues={{
           nombre: '',
-          cargo: '',
           empresa: '',
           telefono: '',
           email: '',
@@ -52,15 +43,12 @@ const [formSent, setFormSent] = useState(false)
           
 
 
-        onSubmit={ (values, { sendEmail, resetForm } ) => {
+        onSubmit={ (values, { setSubmitting, resetForm } ) => {
 
-           emailjs.sendForm('service_e0qslu8','template_qan882o',e.target,'user_jHm0qhPKtbcxBtkM0').then(res=>{
-                console.log(res);
-            })
-
+          sendEmail(values);
           resetForm()
           setFormSent(true)
-
+          setSubmitting(false);
           setTimeout(() => setFormSent(false), 5000)
         }}
   
