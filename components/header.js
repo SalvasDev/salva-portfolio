@@ -67,7 +67,7 @@ export default function Header() {
 
         <Link href="/"> 
           <div className="logo">
-            <Image className="logo__paralel" width='90' src={logo} alt='Logotype odissy' />
+            <Image className="logo__odissy" width='90' src={logo} alt='Logotype odissy' />
           </div>
         </Link>
 
