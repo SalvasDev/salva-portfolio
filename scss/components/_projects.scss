@@ -63,7 +63,7 @@
   @include from(mobl) {
     margin-left: 1rem;
     margin-right: 2rem;
-    row-gap: 3rem;
+    gap: 3rem;
   }
 
 }

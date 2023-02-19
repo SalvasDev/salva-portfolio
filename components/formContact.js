@@ -30,8 +30,7 @@ return (
           //Validation for email
           if ( !/^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/.test(values.email) && values.email !== '' ) {
             errores.email='El correo solo puede contener letras, número, puntos, guiones y guión bajo'
-          } 
-     
+          }     
 
          
           //Validation for telephone
@@ -41,7 +40,6 @@ return (
          return errores
         }}
           
-
 
         onSubmit={ (values, { setSubmitting, resetForm } ) => {
 
