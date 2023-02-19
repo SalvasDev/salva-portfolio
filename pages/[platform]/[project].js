@@ -31,10 +31,10 @@ var htmlContent = { __html: found?.description };
           <h3 className="detail__area">{(found?.area || '').charAt(0).toUpperCase() + (found?.area || '').slice(1)}</h3>
           <h3 className="detail__element">Diseño: { found?.designed }</h3>
           { found?.developed && <h3 className="detail__element">Desarrollo: {found?.developed}</h3> }        
-          <h4 className="detail__share">Compartir en: <a href="">FB</a> <a href="">TW</a> </h4>
+          <h4 className="detail__share">Compartir en: <a href={`https://www.facebook.com/sharer/sharer.php?u=https://odissy.vercel.app/${found?.area}/${found?.name}`}  target='_blank' rel='noreferrer'>FB</a></h4>
         </div>
         <div className="description animate__animated animate__fadeInRight" dangerouslySetInnerHTML={htmlContent}/>
-      </section>  
+      </section>   
 
       <section className="detail__gallery center">
         { 
