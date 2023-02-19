@@ -9,7 +9,7 @@ export default function Footer() {
       <div className="container center">
         <div className="footer__company">
           <Link href="/"> 
-          <Image className="logo__paralel" width='90' src={logo} alt='Logotype paralel' />
+          <Image className="logo__odissy" width='90' src={logo} alt='Logotype Odissy' />
           </Link> 
 
           <div className="footer__company-info">

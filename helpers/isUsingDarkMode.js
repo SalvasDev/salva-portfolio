@@ -2,7 +2,7 @@
       let bodyElement = document.querySelector('body')
       let bodyStyle = getComputedStyle(bodyElement)
       let bodyBackgroundColor = rgb2hex(bodyStyle.backgroundColor)
-      let darkModeBgColor = "#00242A"
+      let darkModeBgColor = "#0C152D"
 
       return darkModeBgColor === bodyBackgroundColor
     }

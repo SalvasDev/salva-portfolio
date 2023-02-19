@@ -3,15 +3,12 @@ import Image from 'next/image'
 import logo from '../assets/img/logo-odissy.svg'
 import lightMode from '../assets/img/light-mode.svg'
 import darkMode from '../assets/img/dark-mode.svg'
-import localFont from '@next/font/local'
 import { isUsingDarkMode } from '../helpers/isUsingDarkMode'
 import { setColorSchemeToLS } from '../helpers/setColorSchemeToLS'
 import { getColorSchemeFromLS } from '../helpers/getColorSchemeFromLS'
 import { burgerBtn } from '../helpers/burgerBtn'
 import Link from 'next/link'
 import { positionAnchor } from '../helpers/positionAnchor'
-
-const avertaReg = localFont({src:'../assets/fonts/Averta-Regular.woff'})
 
 
 export default function Header() {
@@ -61,7 +58,7 @@ export default function Header() {
      
 
   return (
-    <div className={avertaReg.className}>
+    <div>
       {/* Fondo del menú */}
       <div className="menu__bg" id='menu__bg'></div>
 
@@ -70,7 +67,7 @@ export default function Header() {
 
         <Link href="/"> 
           <div className="logo">
-            <Image className="logo__paralel" width='90' src={logo} alt='Logotype paralel' />
+            <Image className="logo__paralel" width='90' src={logo} alt='Logotype odissy' />
           </div>
         </Link>
 
