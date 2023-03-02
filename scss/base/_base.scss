@@ -101,3 +101,23 @@ button {
 
 }
 
+.section__services-page {
+  margin-top: -34rem;
+
+    @include from(t) {
+        margin-top: -12rem;
+      }
+}
+
+.section__about-page {
+  margin-top: -34rem;
+
+  @include from(t) {
+    margin-top: -12rem;
+  }
+}
+
+
+.section__page {
+  margin-top: -10rem;
+}

@@ -4,7 +4,7 @@ import usImg from '../assets/img/us-img.jpg'
 
 export default function About() {
   return (
-    <section className="about__section animate__animated" id='about'>      
+    <section className="about__section animate__animated animate__fadeInUp" id='about'>      
       <div className="about__container">
         <Image className="about__img" height= '900' src={usImg} alt='Branding image' />                            
         <div className="about__text" id='ind__three'>
