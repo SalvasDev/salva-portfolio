@@ -13,9 +13,9 @@ const Socialbar = () => {
   return (
     <div className={`social__bar ${poppins.className}`}>
       <span className="follow">Follow</span>
-      <a href="#start"><Image width='24' className="icon" src={instagram} alt="Icon instagram" /></a>
-      <a href="#start"><Image width='24' className="icon" src={behance} alt="Icon Behance" /></a>
-      <a href='https://dribbble.com/Paralel' target="_blank" rel="noopener noreferrer"><Image width='42' className="icon" src={dribbble} alt="Icon Dribble" /></a>
+      <a href=""><Image width='24' className="icon" src={instagram} alt="Icon instagram" /></a>
+      <a href=""><Image width='24' className="icon" src={behance} alt="Icon Behance" /></a>
+      <a href="" target="_blank" rel="noopener noreferrer"><Image width='42' className="icon" src={dribbble} alt="Icon Dribble" /></a>
     </div>
   )
 }
