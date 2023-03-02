@@ -2,6 +2,8 @@ import React from 'react'
 import Head from 'next/head'
 import BasicLayout from '../layouts/BasicLayout/BasicLayout'
 import About from '../components/about'
+import 'animate.css'
+
 
 
 export default function ProjectsPage() {

@@ -2,6 +2,8 @@ import React from 'react'
 import Head from 'next/head'
 import BasicLayout from '../layouts/BasicLayout/BasicLayout'
 import Contact from '../components/contact'
+import 'animate.css'
+
 
 
 export default function ContactPage() {
