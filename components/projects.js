@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import Gallery from './gallery'
+import 'animate.css'
+
 
 export default function Projects() {
   const [ typeGallery, setTypeGallery ] = useState('todo')
