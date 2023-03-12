@@ -3,7 +3,7 @@ import FormContact from './formContact'
 
 export default function Contact() {
   return (
-    <section className='contact__section animate__animated animate__fadeInUp'>      
+    <section className='contact__section animate__animated animate__fadeInUp' id='contact'>      
       <div className="contact__container">
         <div className="contact__header" id='ind__four'>
           <h2 className="contact__title"  ><span>04 </span>Hablemos</h2>

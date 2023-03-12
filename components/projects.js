@@ -16,7 +16,7 @@ export default function Projects() {
   var color = 'black'
 
   return (
-    <section className="projects__section animate__animated animate__fadeInUp">
+    <section className="projects__section animate__animated animate__fadeInUp" id='projects'>
       <div className='projects__container center' id='ind__two'>
         
         <div className="projects__header">

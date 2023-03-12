@@ -7,7 +7,7 @@ import 'animate.css'
 
 export default function Services() {
   return (
-    <section className="services__section animate__animated animate__fadeInUp">
+    <section className="services__section animate__animated animate__fadeInUp" id='services'>
       <div className="services__container" id='ind__one'>
        <Image className="services__img" height= '1080' src={servicesImg} alt='Branding image' />                            
 
