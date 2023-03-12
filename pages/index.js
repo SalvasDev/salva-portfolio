@@ -6,11 +6,32 @@ import { IndexContextProvider } from '../context/IndexContext'
 import Services from '../components/services'
 import Projects from '../components/projects'
 import Contact from '../components/contact'
+import { useEffect } from 'react'
 import About from '../components/about'
 import 'animate.css'
+import { useRouter } from 'next/router'
 
 
 export default function Home() { 
+
+const router = useRouter();
+
+  useEffect(() => {
+    // Configurar scrollRestoration en manual solo en la página de inicio
+    if (router.pathname === '/*') {
+      if ('scrollRestoration' in window.history) {
+        window.history.scrollRestoration = 'manual';
+      }
+    }
+
+    // Limpiar la propiedad scrollRestoration en un efecto de limpieza cuando se desmonte el componente
+    return () => {
+      if ('scrollRestoration' in window.history) {
+        window.history.scrollRestoration = 'auto';
+      }
+    }
+  }, [router.pathname]);
+
 
   return (
       <>

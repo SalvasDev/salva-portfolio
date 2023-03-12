@@ -1,137 +1,138 @@
-import Link from 'next/link'
 import React, {useContext, useEffect, useState} from 'react'
 import IndexContext from '../context/IndexContext'
 
 
 const Index = ({ind}) => {
 
-const { selected, setSelected } = useContext(IndexContext)
-var {selec, indexSelected } = selected    
+  const { selected, setSelected } = useContext(IndexContext)
+  var {selec, indexSelected } = selected    
 
- const { } = useContext(IndexContext)
-
-useEffect(()=> {
-
-  ///// Observer Start //////
-  const observerStart = new IntersectionObserver( function(entries) {
-    if ( entries[0].isIntersecting ) {
-      const actualIndex = {
-      selec : true,
-      indexSelected : 'Start'      
-    }    
-
-
-    setSelected( actualIndex )
-
-    } else {
-      return      
-    }
-  })
-
-  // Element to observe
-  observerStart.observe(document.querySelector('#start'));
-
-
-  ///// Observer Services //////
-  const observer1 = new IntersectionObserver( function(entries) {
-
-    if ( entries[0].isIntersecting ) {
- 
-      var contMenu = document.querySelector('.services__section')
-      contMenu.classList.add('animate__fadeInUp')
-
-      const actualIndex = {
-      selec : true,
-      indexSelected : '01'      
-    }    
-    setSelected( actualIndex )
-
-    } else {
-      return
-      
-    }
-  })
-
-
-  // Element to observe
-  observer1.observe(document.querySelector('#ind__one'));
+  const { } = useContext(IndexContext)
 
 
 
-  ///// Observer Projects //////
-  const observer2 = new IntersectionObserver( function(entries) {
+  useEffect(()=> {
 
-    if ( entries[0].isIntersecting ) {
-
-      var contMenu = document.querySelector('.projects__section')
-      contMenu.classList.add('animate__fadeInUp')
-
-      const actualIndex = {
-      selec : true,
-      indexSelected : '02'      
-    }    
-
-    setSelected( actualIndex )
-
-
-    } else {
-      return
-      
-    }
-  })
-
-  // Element to observe
-  observer2.observe(document.querySelector('#ind__two'));
-
-
-  ///// Observer Us ///// 
-  const observer3 = new IntersectionObserver( function(entries) {
-
-    if ( entries[0].isIntersecting ) {
-
-      var contMenu = document.querySelector('.about__section')
-      contMenu.classList.add('animate__fadeInUp')
+    ///// Observer Start //////
+    const observerStart = new IntersectionObserver( function(entries) {
+      if ( entries[0].isIntersecting ) {
+        const actualIndex = {
+        selec : true,
+        indexSelected : 'Start'      
+      }    
      
-      const actualIndex = {
-      selec : true,
-      indexSelected : '03'      
-    }    
+      setSelected( actualIndex )
 
-    setSelected( actualIndex )
+      } else {
+        return      
+      }
+    })
 
-    } else {
-      return
+    // Element to observe
+    observerStart.observe(document.querySelector('#start'));
+
+
+    ///// Observer Services //////
+    const observer1 = new IntersectionObserver( function(entries) {
+
+      if ( entries[0].isIntersecting ) {
+  
+        var contMenu = document.querySelector('.services__section')
+        contMenu.classList.add('animate__fadeInUp')
+
+        const actualIndex = {
+        selec : true,
+        indexSelected : '01'      
+      }    
+
+      setSelected( actualIndex )
+
+      } else {
+        return
+        
+      }
+    })
+
+
+    // Element to observe
+    observer1.observe(document.querySelector('#ind__one'));
+
+
+
+    ///// Observer Projects //////
+    const observer2 = new IntersectionObserver( function(entries) {
+
+      if ( entries[0].isIntersecting ) {
+
+        var contMenu = document.querySelector('.projects__section')
+        contMenu.classList.add('animate__fadeInUp')
+
+        const actualIndex = {
+        selec : true,
+        indexSelected : '02'      
+      }    
+
+      setSelected( actualIndex )
+
+
+      } else {
+        return
+        
+      }
+    })
+
+    // Element to observe
+    observer2.observe(document.querySelector('#ind__two'));
+
+
+    ///// Observer Us ///// 
+    const observer3 = new IntersectionObserver( function(entries) {
+
+      if ( entries[0].isIntersecting ) {
+
+        var contMenu = document.querySelector('.about__section')
+        contMenu.classList.add('animate__fadeInUp')
       
-    }
-  })
-  // Element to observe
-  observer3.observe(document.querySelector('#ind__three'));
+        const actualIndex = {
+        selec : true,
+        indexSelected : '03'      
+      }    
 
-  ///// Observer Contact //////
-  const observer4 = new IntersectionObserver( function(entries) {
+      setSelected( actualIndex )
 
-    if ( entries[0].isIntersecting ) {
+      } else {
+        return
+        
+      }
+    })
+    // Element to observe
+    observer3.observe(document.querySelector('#ind__three'));
 
-      var contMenu = document.querySelector('.contact__section')
-      contMenu.classList.add('animate__fadeInUp')
+    ///// Observer Contact //////
+    const observer4 = new IntersectionObserver( function(entries) {
 
-      const actualIndex = {
-      selec : true,
-      indexSelected : '04'      
-    }    
+      if ( entries[0].isIntersecting ) {
 
-    setSelected( actualIndex )
-    
-    } else {
-      return
+        var contMenu = document.querySelector('.contact__section')
+        contMenu.classList.add('animate__fadeInUp')
+
+        const actualIndex = {
+        selec : true,
+        indexSelected : '04'      
+      }    
+      setSelected( actualIndex )
       
-    }
-  })
+      } else {
+        return
+        
+      }
+    })
 
-  // Element to observe
-  observer4.observe(document.querySelector('#ind__four'));
+    // Element to observe
+    observer4.observe(document.querySelector('#ind__four'));
 
- },[])
+
+  },[])
 
   var newInd = 
       ind === 'Start' ? 'start' 
@@ -152,7 +153,6 @@ useEffect(()=> {
         >
             {ind}
          </a>
-
   )
 }
 

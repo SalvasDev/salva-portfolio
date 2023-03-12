@@ -4,11 +4,11 @@ import { useRouter } from 'next/router'
 import Head from 'next/head'
 import BasicLayout from '../../layouts/BasicLayout/BasicLayout'
 import { dbProjects } from '../../utilities/dbProjects'
-// import 'animate.css'
 
 
 export default function Project() {
-  const router = useRouter()
+
+   const router = useRouter()
   const {project, platform} = router.query
   
 const found = dbProjects.find(element => (element?.name === project && element?.area === platform));

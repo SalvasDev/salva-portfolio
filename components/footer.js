@@ -9,12 +9,12 @@ export default function Footer() {
       <div className="container center">
         <div className="footer__company">
           <Link href="/"> 
-          <Image className="logo__odissy" width='90' src={logo} alt='Logotype Odissy' />
+            <Image className="logo__odissy" width='90' src={logo} alt='Logotype Odisy' />
           </Link> 
 
           <div className="footer__company-info">
             <span>443 238 2668</span>
-            <span>hola@byodissy.com</span>
+            <span>byodisy@gmail.com</span>
             <span>Morelia, México</span>
           </div>
         </div>
@@ -39,7 +39,7 @@ export default function Footer() {
 
       </div>
       <div className="footer__copy-politics">
-        <p>© 2023 Odissy. Derechos reservados.</p>
+        <p>© 2023 Odisy. Derechos reservados.</p>
         <a href="">Políticas de privacidad</a>
       </div>
     </section>

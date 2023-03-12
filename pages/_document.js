@@ -1,5 +1,4 @@
 import { Html, Head, Main, NextScript } from 'next/document'
-// import previewOdissy from '../public/img/PreviewOdissy.png'
 
 export default function Document() {
   return (
