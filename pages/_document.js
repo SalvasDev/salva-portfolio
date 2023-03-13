@@ -14,8 +14,8 @@ export default function Document() {
         <meta property="og:description" content="Odisy es una empresa dedicada al diseño y desarrollo web en la ciudad de Morelia." />
         <meta property="og:image" content="/imageHome.png" />
         <meta property="og:image:type" content="image/png" />
-        <meta property="og:image:width" content="1851" />
-        <meta property="og:image:height" content="917" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
       </Head>  
       <body>
         <Main />
