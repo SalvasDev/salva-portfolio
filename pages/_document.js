@@ -12,8 +12,8 @@ export default function Document() {
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Odisy web site" />
         <meta property="og:description" content="Odisy es una empresa dedicada al diseño y desarrollo web en la ciudad de Morelia." />
-        <meta property="og:image" content="/imageHome.png" />
-        <meta property="og:image:type" content="image/png" />
+        <meta property="og:image" content="/imageHome.jpg" />
+        <meta property="og:image:type" content="image/jpg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
       </Head>  
