@@ -10,6 +10,7 @@ import { useEffect } from 'react'
 import About from '../components/about'
 import 'animate.css'
 import { useRouter } from 'next/router'
+import Head from 'next/head'
 
 
 export default function Home() { 
@@ -35,6 +36,10 @@ const router = useRouter();
 
   return (
       <>
+      <Head>
+         <title>Odisy web</title>
+         <meta name='description' content='Odisy es una empresa dedicada al diseño y desarrollo web en la ciudad de Morelia. Somos especialistas en diseño y desarrollo web, páginas web, landing pageas e identidad corporativa como logotipos, diseño gráfico profesional, diseño editorial y creación de contenido para redes sociales.'/>         
+      </Head>
         <IndexContextProvider>
           <BasicLayout>
               <Hero />
