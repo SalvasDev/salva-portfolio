@@ -12,7 +12,7 @@ export const sendEmail = (values) => {
     emailjsConfig.serviceID,
     emailjsConfig.templateID,
     {
-      to_name: 'Odissy',
+      to_name: 'Odisy',
       from_name: nombre,
       from_company: empresa,
       from_phone: telefono,

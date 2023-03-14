@@ -13,11 +13,10 @@ const Socialbar = () => {
   return (
     <div className={`social__bar ${poppins.className}`}>
       <span className="follow">Follow</span>
-      <a href=""><Image width='24' className="icon" src={instagram} alt="Icon instagram" /></a>
-      <a href=""><Image width='24' className="icon" src={behance} alt="Icon Behance" /></a>
-      <a href="" target="_blank" rel="noopener noreferrer"><Image width='42' className="icon" src={dribbble} alt="Icon Dribble" /></a>
+      <a href="https://www.linkedin.com/company/odisy-std/" target="_blank" rel="noopener noreferrer"><Image width='24' className="icon" src={instagram} alt="Icon instagram" /></a>
+      <a href="https://www.behance.net/odisy" target="_blank" rel="noopener noreferrer"><Image width='24' className="icon" src={behance} alt="Icon Behance" /></a>
+      <a href="'https://dribbble.com/odisy" target="_blank" rel="noopener noreferrer"><Image width='42' className="icon" src={dribbble} alt="Icon Dribble" /></a>
     </div>
   )
-}
-
+} 
 export default Socialbar

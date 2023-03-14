@@ -30,10 +30,10 @@ export default function Footer() {
           <div className="footer__networks"> 
               <span>Redes</span>
 
-              <a href='' target="_blank" rel="noopener noreferrer">LinkedIn</a>
-              <a href='' target="_blank" rel="noopener noreferrer">Instagram</a>
-              <a href='' target="_blank" rel="noopener noreferrer">Behance</a>
-              <a href='' target="_blank" rel="noopener noreferrer">Dribbble</a>
+              <a href='https://www.linkedin.com/company/odisy-std/' target="_blank" rel="noopener noreferrer">LinkedIn</a>
+              <a href='https://www.instagram.com/byodisy/' target="_blank" rel="noopener noreferrer">Instagram</a>
+              <a href='https://www.behance.net/odisy' target="_blank" rel="noopener noreferrer">Behance</a>
+              <a href='https://dribbble.com/odisy' target="_blank" rel="noopener noreferrer">Dribbble</a>
           </div>
         </div>
 
