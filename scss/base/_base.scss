@@ -101,7 +101,7 @@ button {
 
 }
 
-.section__services-page {
+.section__skills-page {
   margin-top: -34rem;
   margin-bottom: 34rem;
 
@@ -127,3 +127,34 @@ button {
   margin-bottom: 10rem;
 }
 
+
+.vertical__arrow-btn {
+  display: none;
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+  height: 7.5rem;
+  width: 7.5rem;
+  border: none;
+  border-radius: 50%;
+  background-color: var(--accent-color);
+  color: black;
+  z-index: 300;
+  @include from(dl) {
+      display: flex;
+    }
+}
+
+
+.vertical__arrowbtn-detail {
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+  height: 7.5rem;
+  width: 7.5rem;
+  border: none;
+  border-radius: 50%;
+  background-color: var(--accent-color);
+  color: black;
+  z-index: 300;
+}

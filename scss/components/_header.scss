@@ -12,7 +12,7 @@
       }
 }
 
-.logo__odissy {
+.logo__saldev {
   filter: var(--icons);
   z-index: 200 !important;
 }
@@ -22,11 +22,12 @@
   align-items: center;
   cursor: pointer;
   color: var(--main-color);
+  filter: var(--icons);
 }
 
 
 .logo::after {
-  content: 'home';
+  content: 'Inicio';
   font-size: 1.8rem;
   position: absolute;
   font-weight: 500;

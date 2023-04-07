@@ -19,7 +19,7 @@ const Index = ({ind}) => {
       if ( entries[0].isIntersecting ) {
         const actualIndex = {
         selec : true,
-        indexSelected : 'Start'      
+        indexSelected : 'Inicio'      
       }    
      
       setSelected( actualIndex )
@@ -33,12 +33,12 @@ const Index = ({ind}) => {
     observerStart.observe(document.querySelector('#start'));
 
 
-    ///// Observer Services //////
+    ///// Observer Skills //////
     const observer1 = new IntersectionObserver( function(entries) {
 
       if ( entries[0].isIntersecting ) {
   
-        var contMenu = document.querySelector('.services__section')
+        var contMenu = document.querySelector('.skills__section')
         contMenu.classList.add('animate__fadeInUp')
 
         const actualIndex = {
@@ -136,7 +136,7 @@ const Index = ({ind}) => {
   },[])
 
   var newInd = 
-      ind === 'Start' ? 'start' 
+      ind === 'Inicio' ? 'start' 
       : ind === '01' ? 'ind__one' 
       : ind === '02' ? 'ind__two' 
       : ind === '03' ? 'ind__three' 

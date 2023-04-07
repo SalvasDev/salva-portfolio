@@ -1,4 +1,4 @@
-import React, {useContext} from 'react'
+import React from 'react'
 import { Poppins } from '@next/font/google'
 import Index from './Index'
 
@@ -10,7 +10,7 @@ const poppins = Poppins({
 
 export default function IndexBar() {
 
-  const arrIndex = ['Start', '01', '02', '03', '04']
+  const arrIndex = ['Inicio', '01', '02', '03', '04']
   var i = 0;
   return (
     

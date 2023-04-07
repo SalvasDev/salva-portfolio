@@ -96,6 +96,19 @@
   }
 }
 
+
+.arrow__btn {  
+  transform: rotate(180deg);
+  margin-top: 2rem;
+  margin-left: 1.5rem;
+  &:hover {
+    filter: invert(0%) sepia(99%) saturate(3%) hue-rotate(148deg) brightness(99%) contrast(101%);
+    opacity: 1;
+  }
+}
+
+
+
 .btn__talk {
   display: block;
   width: 16rem;

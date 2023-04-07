@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import logo from '../assets/img/logo-odissy.svg' 
+import logo from '../assets/img/SalDev-01.svg' 
 import Link from 'next/link'
 
 export default function Footer() {
@@ -9,38 +9,35 @@ export default function Footer() {
       <div className="container center">
         <div className="footer__company">
           <Link href="/"> 
-            <Image className="logo__odissy" width='90' src={logo} alt='Logotype Odisy' />
+            <Image className="logo__odissy" width='90' src={logo} alt='Logotype SalvaDev' />
           </Link> 
 
           <div className="footer__company-info">
             <span>443 238 2668</span>
-            <span>byodisy@gmail.com</span>
-            <span>Morelia, México</span>
+            <span>salsanzmelc@gmail.com</span>
           </div>
         </div>
         <div className="footer__columns">
           <div className="footer__menu">
               <span>Menú</span>
-              <Link href='/#services'>Servicios</Link>
+              <Link href='/#skills'>Habilidades</Link>
               <Link href='/#projects'>Proyectos</Link>
-              <Link href='/#about'>Nosotros</Link>
+              <Link href='/#about'>Sobre mí</Link>
               <Link href='/#contact'>Contacto</Link>
           </div>
 
           <div className="footer__networks"> 
               <span>Redes</span>
 
-              <a href='https://www.linkedin.com/company/odisy-std/' target="_blank" rel="noopener noreferrer">LinkedIn</a>
-              <a href='https://www.instagram.com/byodisy/' target="_blank" rel="noopener noreferrer">Instagram</a>
-              <a href='https://www.behance.net/odisy' target="_blank" rel="noopener noreferrer">Behance</a>
-              <a href='https://dribbble.com/odisy' target="_blank" rel="noopener noreferrer">Dribbble</a>
+              <a href='https://linkedin.com/in/salvador-sánchez-94b251237' target="_blank" rel="noopener noreferrer">LinkedIn</a>
+              <a href='https://github.com/SalvasDev' target="_blank" rel="noopener noreferrer">Github</a>
+              <a href='https://www.behance.net/SALVADOR_SANCHEZ' target="_blank" rel="noopener noreferrer">Behance</a>
+              <a href='https://dribbble.com/Salvadorsanchez' target="_blank" rel="noopener noreferrer">Dribbble</a>
           </div>
         </div>
 
       </div>
       <div className="footer__copy-politics">
-        <p>© 2023 Odisy. Derechos reservados.</p>
-        <a href="">Políticas de privacidad</a>
       </div>
     </section>
   )

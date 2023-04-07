@@ -48,14 +48,6 @@
   margin-top: 3rem;
   flex-wrap: wrap;
 
-  @include from(dl) {
-    margin-left: 10%;
-  }
-
-  @include from(ds) {
-    margin-left: 2rem;
-  }
-
   @include from(ts) {
     gap: 1rem;
   }

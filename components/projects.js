@@ -20,40 +20,7 @@ export default function Projects() {
       <div className='projects__container center' id='ind__two'>
         
         <div className="projects__header">
-
-          <h2 className="projects__title"><span>02 </span>Proyectos</h2>
-
-          <div className="projects__labels">
-            <button 
-              className="projects__btn"
-              style={ typeGallery === 'todo' ? { background: bgColor, borderColor: borderColor, color: color } : null}
-              onClick={(e) => {handleGallery(e, 'todo')}}
-            >
-            Todo
-            </button>  
-            <button 
-              className="projects__btn"
-              style={ typeGallery === 'branding' ? { background: bgColor, borderColor: borderColor, color: color } : null}
-              onClick={(e) => {handleGallery(e, 'branding')}}
-            >
-            Branding
-            </button>  
-            <button 
-              className="projects__btn"
-              style={ typeGallery === 'web' ? { background: bgColor, borderColor: borderColor, color: color } : null}
-              onClick={(e) => {handleGallery(e, 'web')}}
-            >
-            Web
-            </button>  
-            <button 
-              className="projects__btn"
-              style={ typeGallery === 'diseño' ? { background: bgColor, borderColor: borderColor, color: color } : null}
-              onClick={(e) => {handleGallery(e, 'diseño')}}
-            >
-            Diseño
-            </button>                                           
-          </div>  
-          
+          <h2 className="projects__title"><span>02 </span>Proyectos</h2>                   
         </div>
 
       </div>

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import logo from '../assets/img/logo-odissy.svg'
+import logo from '../assets/img/SalDev-01.svg'
 import lightMode from '../assets/img/light-mode.svg'
 import darkMode from '../assets/img/dark-mode.svg'
 import { isUsingDarkMode, setColorSchemeToLS, getColorSchemeFromLS, burgerBtn, positionAnchor } from '../helpers'
@@ -9,12 +9,12 @@ import { isUsingDarkMode, setColorSchemeToLS, getColorSchemeFromLS, burgerBtn, p
 
 export default function Header() {
 
+
   const [checked, setChecked] = useState(false)
 
     const handleBurger = () => {
       burgerBtn()
     }
-
 
     useEffect(() => {
 
@@ -36,7 +36,10 @@ export default function Header() {
       } 
     }, []) 
 
- 
+  
+    
+
+
     const changeTheme = () => {
       var bodyElement = document.querySelector('body')
       if(checked === false) {
@@ -63,7 +66,7 @@ export default function Header() {
 
         <Link href="/"> 
           <div className="logo">
-            <Image className="logo__odissy" width='90' src={logo} alt='Logotype odissy' />
+            <Image className="logo__salvdev" width='90' src={logo} alt='Logotype Salvador' />
           </div>
         </Link>
 
@@ -87,9 +90,9 @@ export default function Header() {
          {/* Menu mobile */}
         <nav className="showMenuMobile " id='showMenuMobile' onClick= { handleBurger } >
           <Link href='/' className="animate__animated animate__slideInDown">Inicio</Link>
-          <Link href="/servicesPage" className="animate__animated animate__slideInDown">Servicios</Link>
+          <Link href="/skillsPage" className="animate__animated animate__slideInDown">Habilidades</Link>
           <Link href="/projectsPage" className="animate__animated animate__slideInDown">Proyectos</Link>
-          <Link href="/aboutPage" className="animate__animated animate__slideInDown">Nosotros</Link>
+          <Link href="/aboutPage" className="animate__animated animate__slideInDown">Sobre mí</Link>
           <Link href="/contactPage" className="animate__animated animate__slideInDown">Contacto</Link>
         </nav>
         
@@ -112,3 +115,38 @@ export default function Header() {
     </div>
   )
 }
+
+  // useEffect( () => {
+  //     const buttonVertical = document.querySelector('.vertical__arrow-btn')
+  //     buttonVertical.style.display = 'flex';    
+
+  // },[])
+
+  // const targetRef = useRef(null);
+  //   useEffect(() => {
+  //   const observerVerticalBtn = new IntersectionObserver(
+  //     (entries) => {
+  //       entries.forEach((entry) => {
+  //         if (entry.isIntersecting) {
+  //           setShowVerticalBtn(true)
+  //         } else {
+  //           setShowVerticalBtn(false)
+  //         }
+  //       });
+  //     },
+  //     {
+  //       root: null,
+  //       rootMargin: "0px",
+  //       threshold: 0.5, // Este valor indica el porcentaje de visibilidad que se requiere para que el evento se desencadene
+  //     }
+  //   );
+
+  //     observerVerticalBtn.observe(targetRef.current);
+    
+  //   return () => {
+  //       // eslint-disable-next-line react-hooks/exhaustive-deps
+  //       observerVerticalBtn.unobserve(targetRef.current);
+  //     }
+  // }, []);
+
+  // se pone esto ref={targetRef} al div o elemento a observar

@@ -4,7 +4,9 @@ import Header from '../../components/header'
 
 
 export default function BasicLayout(props) {
-  const {  children } = props
+  const { children } = props
+
+  
   return (
     <>
       <div>

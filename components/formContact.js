@@ -100,7 +100,7 @@ return (
               )}/> 
             </div>
             <div>
-              <label htmlFor='comentario'>¿Cómo podemos ayudarle?</label>
+              <label htmlFor='comentario'>Déjame un mensaje</label>
               <Field as='textarea'
                 cols="30" 
                 rows="2"

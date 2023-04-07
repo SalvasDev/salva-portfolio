@@ -7,7 +7,7 @@ export default function Contact() {
       <div className="contact__container">
         <div className="contact__header" id='ind__four'>
           <h2 className="contact__title"  ><span>04 </span>Hablemos</h2>
-          <p className="contact__tagline">Por favor llene el siguiente formulario si desea una cotización. Le contactaremos en breve.</p>
+          <p className="contact__tagline">Por favor llena el siguiente formulario si deseas que me ponga en contacto contigo.</p>
         </div>
 
         {/* Grid contact form */}
@@ -19,8 +19,7 @@ export default function Contact() {
 
           <div className="contact__info">
             <span>443 238 2668</span>
-            <span>byodisy@gmail.com</span>
-            <span>Morelia, México</span>
+            <span>salsanzmelc@gmail.com</span>
           </div>
 
         </div>
