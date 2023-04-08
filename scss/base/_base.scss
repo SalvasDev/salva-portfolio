@@ -138,7 +138,6 @@ button {
   border: none;
   border-radius: 50%;
   background-color: var(--accent-color);
-  color: black;
   z-index: 300;
   @include from(dl) {
       display: flex;
@@ -155,6 +154,5 @@ button {
   border: none;
   border-radius: 50%;
   background-color: var(--accent-color);
-  color: black;
   z-index: 300;
 }

@@ -4,7 +4,7 @@ import Image from 'next/image'
 import logo from '../assets/img/SalDev-01.svg'
 import lightMode from '../assets/img/light-mode.svg'
 import darkMode from '../assets/img/dark-mode.svg'
-import { isUsingDarkMode, setColorSchemeToLS, getColorSchemeFromLS, burgerBtn, positionAnchor } from '../helpers'
+import { isUsingDarkMode, setColorSchemeToLS, getColorSchemeFromLS, burgerBtn } from '../helpers'
 
 
 export default function Header() {
@@ -17,8 +17,6 @@ export default function Header() {
     }
 
     useEffect(() => {
-
-      positionAnchor()
 
       isUsingDarkMode()        
       setChecked(isUsingDarkMode()) 

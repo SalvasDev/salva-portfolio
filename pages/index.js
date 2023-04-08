@@ -12,7 +12,7 @@ import Head from 'next/head'
 import Skills from '../components/skills'
 import Image from 'next/image'
 import arrow from '../assets/img/arrow.svg'
-import { positionAnchor } from '../helpers'
+import { positionAnchor } from '../helpers/'
 
 
 export default function Home() { 
@@ -57,7 +57,10 @@ const [showVerticalBtn, setShowVerticalBtn ] = useState(false)
               <About />
               <Contact />
               {
-               showVerticalBtn && <a href='#start' className="vertical__arrow-btn"><Image className="icon arrow arrow__btn" width='45' src={arrow} alt='arrow'/></a>
+               showVerticalBtn && 
+                <a href='#start' className="vertical__arrow-btn">
+                    <Image className="arrow__btn" width='45' src={arrow} alt='arrow'/>
+                </a>
               }
           </BasicLayout>
         </IndexContextProvider>

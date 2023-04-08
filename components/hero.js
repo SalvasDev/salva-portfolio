@@ -8,7 +8,7 @@ export default function Hero() {
     <div>
       <section className="hero__section container center"> 
         <div className="hero__contain">
-          <h1 className="main__title animate__animated animate__fadeInUp" >Frontend Dev</h1>
+          <h1 className="main__title animate__animated animate__fadeInUp">Frontend Dev</h1>
           <h2 className={`main__subtitle animate__animated animate__fadeInUp`}>Salvador Sánchez
           </h2> 
           <a href="#contact"><button className="btn__talk animate__animated animate__fadeInUp">Hablemos</button></a>

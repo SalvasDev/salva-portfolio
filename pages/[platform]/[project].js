@@ -4,7 +4,6 @@ import { useRouter } from 'next/router'
 import Head from 'next/head'
 import BasicLayout from '../../layouts/BasicLayout/BasicLayout'
 import { dbProjects } from '../../utilities/dbProjects'
-import { positionAnchor } from '../../helpers'
 import arrow from '../../assets/img/arrow.svg'
 
 
@@ -19,7 +18,6 @@ export default function Project() {
   var htmlContent = { __html: found?.description };
 
   useEffect(() => {
-      positionAnchor()
 
       const handleScroll = () => {
       const distanceFromTop = window.pageYOffset || document.documentElement.scrollTop;
@@ -83,7 +81,7 @@ export default function Project() {
         }
       </section>
       {
-       showVerticalBtnDetail && <a href="#start" className="vertical__arrowbtn-detail"><Image className="icon arrow arrow__btn" width='45' src={arrow} alt='arrow'/></a>
+       showVerticalBtnDetail && <a href='#start' className="vertical__arrowbtn-detail"><Image className="arrow__btn" width='45' src={arrow} alt='arrow'/></a>
       }
     </div>        
     </BasicLayout>

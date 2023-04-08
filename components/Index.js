@@ -1,5 +1,4 @@
-import Link from 'next/link'
-import React, {useContext, useEffect, useState} from 'react'
+import React, { useContext, useEffect } from 'react'
 import IndexContext from '../context/IndexContext'
 
 
@@ -143,17 +142,12 @@ const Index = ({ind}) => {
       : ind === '04' ? 'ind__four' 
       : null
 
-  var identi = '#'+newInd  
-
+  var identi = '#' + newInd  
+ 
   var btnSelected = selec && (indexSelected === ind)  ? 'index__item selected' : 'index__item'  
   
   return (
-        <a 
-            href={identi}
-            className= { btnSelected }
-        >
-            {ind}
-         </a>
+        <a href={identi} className= { btnSelected }>{ ind }</a>
   )
 }
 
