@@ -1,7 +1,6 @@
 import React from 'react'
 import { Poppins } from '@next/font/google'
-import  IndexBarDetail  from './IndexBarDetail'
-
+import IndexBarDetail from './indexBarDetail';
 
 const poppins = Poppins({
   weight: ['400', '500', '600','700'],

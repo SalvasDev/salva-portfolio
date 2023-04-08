@@ -2,7 +2,7 @@ import React, { useContext, useEffect } from 'react'
 import IndexContext from '../context/IndexContext'
 
 
-const IndexBarDetail = ({ind}) => {
+export default function IndexBarDetail  ({ind})  {
 
   const { selected, setSelected } = useContext(IndexContext)
   var {selec, indexSelected } = selected    
@@ -131,6 +131,10 @@ const IndexBarDetail = ({ind}) => {
     // Element to observe
     observer4.observe(document.querySelector('#ind__four'));
 
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+
 
   },[])
 
@@ -151,4 +155,3 @@ const IndexBarDetail = ({ind}) => {
   )
 }
 
-export default IndexBarDetail
