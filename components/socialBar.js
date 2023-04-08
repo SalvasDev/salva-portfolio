@@ -9,7 +9,7 @@ const poppins = Poppins({
   weight: ['400', '500', '600','700'],
   style: ['normal']
 })
-const Socialbar = () => {
+const SocialBar = () => {
   return (
     <div className={`social__bar ${poppins.className}`}>
       <span className="follow">Sígueme</span>
@@ -19,4 +19,4 @@ const Socialbar = () => {
     </div>
   )
 } 
-export default Socialbar
+export default SocialBar

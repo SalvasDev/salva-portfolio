@@ -1,6 +1,6 @@
 import React from 'react'
 import { Poppins } from '@next/font/google'
-import Index from './Index'
+import  IndexBarDetail  from './IndexBarDetail'
 
 
 const poppins = Poppins({
@@ -19,7 +19,7 @@ export default function IndexBar() {
         { arrIndex.map(ind => {
           i = i + 1
           return (
-            <Index 
+            <IndexBarDetail
               key={i.toString()}
               ind = {ind}
             />

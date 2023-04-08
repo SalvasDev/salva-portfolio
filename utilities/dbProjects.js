@@ -32,7 +32,7 @@ export const dbProjects = [
     thumbnail: "/img/edie/thumb-edie.png",
     pics: 
     [
-     '/img/edie/edie-tablet.png',
+      '/img/edie/edie-tablet.png',
       '/img/edie/edie-header.png',
       '/img/edie/edie-services.png',
       '/img/edie/edie-projects1.png',
@@ -40,7 +40,7 @@ export const dbProjects = [
       '/img/edie/edie-team.png',
       '/img/edie/edie-footer.png'    
     ],
-    description: "<p><strong>Edie homepage</strong> es una landing page experimental desarrollada para demostrar el manejo del código de programación <br/> <br/> Para su realiazación se utilizaron diferentes tecnologías como: HTML5, CSS3 y JavaScript. <br/> <br/> Esta landing page muestra el manejo del diseño responsivo.</p>", 
+    description: "<p><strong>Edie homepage</strong> es una landing page experimental desarrollada para demostrar el manejo del código de programación.<br/> <br/> Para su realiazación se utilizaron diferentes tecnologías como: HTML5, CSS3 y JavaScript. <br/> <br/> Esta landing page muestra el manejo del diseño responsivo.</p>", 
     code:'https://github.com/SalvasDev/edie-homepage',
     demo:'https://edie-homepage-salvasdev.netlify.app/'    
   },
@@ -63,6 +63,23 @@ export const dbProjects = [
     description: "<p><strong>Analytics</strong> es una landing page experimental desarrollada para demostrar el manejo del código de programación.<br/> <br/> Para su realiazación se utilizaron diferentes tecnologías como: HTML5, CSS modules, TypeScript, React. <br/> <br/> Esta landing page muestra el manejo del diseño responsivo.</p>", 
     code:'https://github.com/SalvasDev/analytics',
     demo:'https://analytics-sal.netlify.app/'    
+  },
+    {
+    id: '104',
+    area: "web",
+    name: "Vitalinea",
+    designed: "IA Interactive",  
+    developed: "Salvador Sánchez",
+    thumbnail: "/img/vitalinea/thumb-vitalinea.png",
+    pics: 
+    [
+      '/img/vitalinea/vitalinea-1.png',
+      '/img/vitalinea/vitalinea-2.png',
+      '/img/vitalinea/vitalinea-3.png'  
+    ],
+    description: "<p><strong>Vitalinea</strong> es una landing page experimental como reto de programación, desarrollada para demostrar el manejo del código de programación.<br/> <br/> Para su realiazación se utilizaron diferentes tecnologías como: HTML5, SASS, JavaScript, React. <br/> <br/> Esta landing page muestra el manejo del diseño responsivo.</p>", 
+    code:'https://github.com/SalvasDev/vitalinea',
+    demo:'https://vitalinea-salvador.netlify.app'    
   },
 
 ];

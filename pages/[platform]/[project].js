@@ -4,7 +4,7 @@ import { useRouter } from 'next/router'
 import Head from 'next/head'
 import BasicLayout from '../../layouts/BasicLayout/BasicLayout'
 import { dbProjects } from '../../utilities/dbProjects'
-import arrow from '../../assets/img/arrow.svg'
+import ButtonDetail from '../../components/buttonDetail'
 
 
 export default function Project() {
@@ -17,8 +17,9 @@ export default function Project() {
   const found = dbProjects.find(element => (element?.name === project && element?.area === platform));
   var htmlContent = { __html: found?.description };
 
-  useEffect(() => {
 
+
+  useEffect(() => {
       const handleScroll = () => {
       const distanceFromTop = window.pageYOffset || document.documentElement.scrollTop;
       const totalHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
@@ -81,8 +82,8 @@ export default function Project() {
         }
       </section>
       {
-       showVerticalBtnDetail && <a href='#start' className="vertical__arrowbtn-detail"><Image className="arrow__btn" width='45' src={arrow} alt='arrow'/></a>
-      }
+        showVerticalBtnDetail && <ButtonDetail smart__class='vertical__arrowbtn-detail'/>
+      }   
     </div>        
     </BasicLayout>
     </>

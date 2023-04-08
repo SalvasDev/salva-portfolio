@@ -2,7 +2,7 @@ import React, { useContext, useEffect } from 'react'
 import IndexContext from '../context/IndexContext'
 
 
-const Index = ({ind}) => {
+const IndexBarDetail = ({ind}) => {
 
   const { selected, setSelected } = useContext(IndexContext)
   var {selec, indexSelected } = selected    
@@ -151,4 +151,4 @@ const Index = ({ind}) => {
   )
 }
 
-export default Index
+export default IndexBarDetail

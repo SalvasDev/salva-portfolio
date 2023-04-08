@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import BasicLayout from '../layouts/BasicLayout'
 import Hero from '../components/hero'
-import Socialbar from '../components/socialBar'
+import SocialBar from '../components/socialBar'
 import IndexBar from '../components/indexBar'
 import { IndexContextProvider } from '../context/IndexContext'
 import Projects from '../components/projects'
@@ -10,29 +10,32 @@ import About from '../components/about'
 import 'animate.css'
 import Head from 'next/head'
 import Skills from '../components/skills'
-import Image from 'next/image'
-import arrow from '../assets/img/arrow.svg'
 import { positionAnchor } from '../helpers/'
+import ButtonDetail from '../components/buttonDetail'
 
 
 export default function Home() { 
 
 const [showVerticalBtn, setShowVerticalBtn ] = useState(false)
 
- useEffect(() => {
-      positionAnchor()   
+
+
+useEffect(() => {
+      //Posiciona el puntero en el topo de la página dejando su margen respectivo
+      positionAnchor()
+
       const handleScroll = () => {
-      const distanceFromTop = window.pageYOffset || document.documentElement.scrollTop;
-      const totalHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-      const distanceInPercentage = (distanceFromTop / totalHeight) * 100;
+        const distanceFromTop = window.pageYOffset || document.documentElement.scrollTop;
+        const totalHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        const distanceInPercentage = (distanceFromTop / totalHeight) * 100;
 
-      if (distanceInPercentage >= 5 ) { // Cambia este valor para el porcentaje que desees
+        if (distanceInPercentage >= 5 ) { // Cambia este valor para el porcentaje que desees
 
-        setShowVerticalBtn(true)  
-      } else {
-        setShowVerticalBtn(false)
-      }
-    };
+          setShowVerticalBtn(true)  
+        } else {
+          setShowVerticalBtn(false)
+        }
+       };
 
     window.addEventListener("scroll", handleScroll);
 
@@ -50,19 +53,14 @@ const [showVerticalBtn, setShowVerticalBtn ] = useState(false)
         <IndexContextProvider>
           <BasicLayout>
               <Hero />
-              <Socialbar />
+              <SocialBar />
               <IndexBar />
               <Skills />
               <Projects />
               <About />
               <Contact />
-              {
-               showVerticalBtn && 
-                <a href='#start' className="vertical__arrow-btn">
-                    <Image className="arrow__btn" width='45' src={arrow} alt='arrow'/>
-                </a>
-              }
-          </BasicLayout>
+              { showVerticalBtn && <ButtonDetail smart__class='vertical__arrow-btn' /> }
+            </BasicLayout >
         </IndexContextProvider>
       </>
   )
