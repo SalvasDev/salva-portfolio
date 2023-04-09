@@ -6,7 +6,7 @@ import arrow from '../assets/img/arrow.svg'
 
 const ButtonDetail = ({ smart__class }) => {
 
-  useEffect(()=> {
+useEffect(()=> {
   positionAnchor()
 },[])
 
