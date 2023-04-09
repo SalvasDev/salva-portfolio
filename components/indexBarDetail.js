@@ -131,11 +131,6 @@ export default function IndexBarDetail  ({ind})  {
     // Element to observe
     observer4.observe(document.querySelector('#ind__four'));
 
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-
-
   },[])
 
   var newInd = 
