@@ -19,8 +19,8 @@ export default function Home() {
 const [showVerticalBtn, setShowVerticalBtn ] = useState(false)
 
 
-
 useEffect(() => {
+
       //Posiciona el puntero en el topo de la página dejando su margen respectivo
       positionAnchor()
 
@@ -61,24 +61,10 @@ useEffect(() => {
               <Contact />
               { showVerticalBtn && <ButtonDetail smart__class='vertical__arrow-btn' /> }
             </BasicLayout >
-        </IndexContextProvider>
+        </IndexContextProvider>    
       </>
   )
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

@@ -3,8 +3,8 @@ import React, {useState} from 'react'
 const Context = React.createContext({})
 
 export function IndexContextProvider ({children}) {
-    const [ selected, setSelected ] = useState({selec: true, indexSelected:'Start'})
-    const [ indexCurrent, setIndexCurrent ] = useState('Start')
+    const [ selected, setSelected ] = useState({selec: false, indexSelected: null})
+    const [ indexCurrent, setIndexCurrent ] = useState('ind__two')
 
     return (
     

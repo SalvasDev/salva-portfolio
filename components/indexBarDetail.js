@@ -1,17 +1,14 @@
 import React, { useContext, useEffect } from 'react'
 import IndexContext from '../context/IndexContext'
+import Link  from 'next/link'
 
 
-export default function IndexBarDetail  ({ind})  {
+export default function IndexBarDetail  ({ ind })  {
 
   const { selected, setSelected } = useContext(IndexContext)
-  var {selec, indexSelected } = selected    
+  var { selec, indexSelected } = selected    
 
-  const { } = useContext(IndexContext)
-
-
-
-  useEffect(()=> {
+useEffect(()=> {
 
     ///// Observer Start //////
     const observerStart = new IntersectionObserver( function(entries) {
@@ -20,7 +17,7 @@ export default function IndexBarDetail  ({ind})  {
         selec : true,
         indexSelected : 'Inicio'      
       }    
-     
+     localStorage.setItem('indexSelected', actualIndex.indexSelected);
       setSelected( actualIndex )
 
       } else {
@@ -31,6 +28,14 @@ export default function IndexBarDetail  ({ind})  {
     // Element to observe
     observerStart.observe(document.querySelector('#start'));
 
+  return () => {
+      observerStart.disconnect(); // función de limpieza para eliminar el observador
+  };    
+
+  },[])
+
+
+  useEffect(()=> {
 
     ///// Observer Skills //////
     const observer1 = new IntersectionObserver( function(entries) {
@@ -44,7 +49,7 @@ export default function IndexBarDetail  ({ind})  {
         selec : true,
         indexSelected : '01'      
       }    
-
+      localStorage.setItem('indexSelected', actualIndex.indexSelected);
       setSelected( actualIndex )
 
       } else {
@@ -55,9 +60,16 @@ export default function IndexBarDetail  ({ind})  {
 
 
     // Element to observe
-    observer1.observe(document.querySelector('#ind__one'));
+  observer1.observe(document.querySelector('#ind__one'));
+    
+  return () => {
+      observer1.disconnect(); // función de limpieza para eliminar el observador
+  };
+
+  },[])
 
 
+  useEffect(()=> {
 
     ///// Observer Projects //////
     const observer2 = new IntersectionObserver( function(entries) {
@@ -72,6 +84,7 @@ export default function IndexBarDetail  ({ind})  {
         indexSelected : '02'      
       }    
 
+      localStorage.setItem('indexSelected', actualIndex.indexSelected);
       setSelected( actualIndex )
 
 
@@ -83,7 +96,15 @@ export default function IndexBarDetail  ({ind})  {
 
     // Element to observe
     observer2.observe(document.querySelector('#ind__two'));
+    return () => {
+      observer2.disconnect(); // función de limpieza para eliminar el observador
+    };
 
+
+  },[])
+
+
+  useEffect(()=> {
 
     ///// Observer Us ///// 
     const observer3 = new IntersectionObserver( function(entries) {
@@ -97,7 +118,7 @@ export default function IndexBarDetail  ({ind})  {
         selec : true,
         indexSelected : '03'      
       }    
-
+      localStorage.setItem('indexSelected', actualIndex.indexSelected);
       setSelected( actualIndex )
 
       } else {
@@ -107,6 +128,16 @@ export default function IndexBarDetail  ({ind})  {
     })
     // Element to observe
     observer3.observe(document.querySelector('#ind__three'));
+    return () => {
+      observer3.disconnect(); // función de limpieza para eliminar el observador
+     };
+
+  },[])
+
+
+
+
+  useEffect(()=> {
 
     ///// Observer Contact //////
     const observer4 = new IntersectionObserver( function(entries) {
@@ -120,6 +151,7 @@ export default function IndexBarDetail  ({ind})  {
         selec : true,
         indexSelected : '04'      
       }    
+      localStorage.setItem('indexSelected', actualIndex.indexSelected);
       setSelected( actualIndex )
       
       } else {
@@ -130,8 +162,12 @@ export default function IndexBarDetail  ({ind})  {
 
     // Element to observe
     observer4.observe(document.querySelector('#ind__four'));
+    return () => {
+      observer4.disconnect(); // función de limpieza para eliminar el observador
+    };
 
   },[])
+
 
   var newInd = 
       ind === 'Inicio' ? 'start' 
@@ -146,7 +182,17 @@ export default function IndexBarDetail  ({ind})  {
   var btnSelected = selec && (indexSelected === ind)  ? 'index__item selected' : 'index__item'  
   
   return (
-        <a href={identi} className= { btnSelected }>{ ind }</a>
+    <a href={identi} className={ btnSelected } prefetch={true} scroll={false}>{ ind } </a>
   )
 }
+
+
+
+
+
+
+
+
+
+
 

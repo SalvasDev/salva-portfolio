@@ -39,7 +39,7 @@ export default function Project() {
     };
   }, []);
 
-
+  var ind = 1
   return (
     <>
     <Head>      
@@ -70,10 +70,11 @@ export default function Project() {
 
       <section className="detail__gallery center">
         { 
-          (found?.pics || []).map(img => {
+            (found?.pics || []).map(img => {
+            ind = ind + 1
             return (
               <>
-              <div className="detail__image center animate__animated animate__fadeInUp">
+              <div key={ind.toString()} className="detail__image center animate__animated animate__fadeInUp">
                 <Image className="detail__pic center" width='1920' height='1280' src={img} alt='Imágenes del proyecto' />
               </div>
               </>

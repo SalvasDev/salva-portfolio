@@ -11,6 +11,7 @@ export default function IndexBar() {
 
   const arrIndex = ['Inicio', '01', '02', '03', '04']
   var i = 0;
+  
   return (
     
     <div className={`index__bar ${poppins.className}`}>
