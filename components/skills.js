@@ -6,7 +6,7 @@ import 'animate.css'
 
 export default function Skills() {
 
-  const skillsList = ['Next.js', 'React', 'TypeScript', 'JavaScript', 'CSS - SASS', 'Material UI  - Bootstrap', 'HTML5', 'Git - Github', 'Postman']; 
+  const skillsList = ['Next.js', 'React', 'TypeScript', 'JavaScript', 'CSS - SASS', 'Material UI', 'HTML5', 'Git - Github', 'Postman']; 
 
   return (
     <section className="skills__section animate__animated animate__fadeInUp" id='skills'>

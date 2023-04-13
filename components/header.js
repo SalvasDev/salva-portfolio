@@ -114,37 +114,3 @@ export default function Header() {
   )
 }
 
-  // useEffect( () => {
-  //     const buttonVertical = document.querySelector('.vertical__arrow-btn')
-  //     buttonVertical.style.display = 'flex';    
-
-  // },[])
-
-  // const targetRef = useRef(null);
-  //   useEffect(() => {
-  //   const observerVerticalBtn = new IntersectionObserver(
-  //     (entries) => {
-  //       entries.forEach((entry) => {
-  //         if (entry.isIntersecting) {
-  //           setShowVerticalBtn(true)
-  //         } else {
-  //           setShowVerticalBtn(false)
-  //         }
-  //       });
-  //     },
-  //     {
-  //       root: null,
-  //       rootMargin: "0px",
-  //       threshold: 0.5, // Este valor indica el porcentaje de visibilidad que se requiere para que el evento se desencadene
-  //     }
-  //   );
-
-  //     observerVerticalBtn.observe(targetRef.current);
-    
-  //   return () => {
-  //       // eslint-disable-next-line react-hooks/exhaustive-deps
-  //       observerVerticalBtn.unobserve(targetRef.current);
-  //     }
-  // }, []);
-
-  // se pone esto ref={targetRef} al div o elemento a observar
