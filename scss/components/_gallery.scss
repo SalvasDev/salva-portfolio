@@ -3,9 +3,13 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   font-family: $font-prin, sans-serif;
+  padding-right: 8rem;
+  padding-left: 3rem;
 
   @media (max-width: 666px) {
     row-gap: 2rem;  
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 

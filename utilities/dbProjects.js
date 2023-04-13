@@ -82,4 +82,22 @@ export const dbProjects = [
     demo:'https://vitalinea-salvador.netlify.app'    
   },
 
+{
+    id: '105',
+    area: "web",
+    name: "Remo jobs",
+    designed: "Thu Nghiem",  
+    developed: "Salvador Sánchez",
+    thumbnail: "/img/remo-jobs/thumb-remo-jobs2.png",
+    pics: 
+    [
+      '/img/remo-jobs/remo-jobs-1.png',
+      '/img/remo-jobs/remo-jobs-2.png',
+      '/img/remo-jobs/remo-jobs-3.png'  
+    ],
+    description: "<p><strong>Remo jobs</strong> es una aplicación web para buscar empleos en la industria de TI.<br/> <br/>Para su realización utilicé diversas tecnologías, como JavaScript con la biblioteca React, componentes de estilo CSS3 y JSX para crear la interfaz de usuario. La gestión de versiones se realizó con Git y Github, y la aplicación se implementó en Netlify.</p>", 
+    code:'https://github.com/SalvasDev/remo-jobs',
+    demo:'https://remo-jobs.netlify.app/'    
+  },
+
 ];
