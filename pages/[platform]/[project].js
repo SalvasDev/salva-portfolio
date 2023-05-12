@@ -18,6 +18,26 @@ export default function Project() {
   var htmlContent = { __html: found?.description };
 
 
+  useEffect(() => {
+    const handleRouteChange = (url) => {
+      if ( url !== '/' ) {
+        window.history.pushState({}, null, '/');
+        // window.location.reload();
+        router.replace('/')
+        window.scrollTo({ top: 0 });
+
+
+      }
+    };
+
+    window.addEventListener('popstate', handleRouteChange);
+
+    return () => {
+      window.removeEventListener('popstate', handleRouteChange);
+    };
+  }, []);
+
+
 
   useEffect(() => {
       const handleScroll = () => {
