@@ -106,7 +106,7 @@ export const dbProjects = [
   //   designed: "Thu Nghiem",
   //   developed: "Salvador Sánchez",
   //   thumbnail: "/img/weather-app/thumb-weather-app.png",
-  //   pics:
+  //   pics:z
   //     [
   //       '/img/weather-app/weather-app-1.png'
 
@@ -133,5 +133,23 @@ export const dbProjects = [
     description: "<p><strong>Don Remolo Pizzas</strong> es una aplicación web para vender pizzas y otros alimentos.<br/> <br/>Para su realización utilizamos diversas tecnologías como: Next.js, Material UI, Node y Mongodbon. La gestión de versiones se realizó con Git y Github.</p>",
     code: 'https://github.com/SalvasDev/Pizzas-Don-Remolo',
     demo: '/videoDemos'
+  },
+  {
+    id: '108',
+    area: "web",
+    name: "Pokémon app",
+    designed: "Fernando Herrera",
+    developed: "Salvador Sánchez",
+    thumbnail: "/img/pokemon/thumb-pokemon.png",
+    pics:
+      [
+        '/img/pokemon/pokemon-home.png',
+        '/img/pokemon/pokemon-detail.png',
+        '/img/pokemon/pokemon-favorites.png',
+
+      ],
+    description: "<p><strong>Pokemon App Pizzas</strong> es una aplicación web que extrae pokemons de una api y los muestra con un renderizado estatico de lado del servidor para servir la información en tiempo de producción.<br/> <br/>Para su realización utilizamos diversas tecnologías como: Next.js y Next UI. La gestión de versiones se realizó con Git y Github.</p>",
+    code: 'https://github.com/SalvasDev/02-pokemon-static',
+    demo: 'https://02-pokemon-static-sigma.vercel.app/'
   },
 ];
