@@ -132,7 +132,7 @@ export const dbProjects = [
       ],
     description: "<p><strong>Don Remolo Pizzas</strong> es una aplicación web para vender pizzas y otros alimentos.<br/> <br/>Para su realización utilizamos diversas tecnologías como: Next.js, Material UI, Node y Mongodbon. La gestión de versiones se realizó con Git y Github.</p>",
     code: 'https://github.com/SalvasDev/Pizzas-Don-Remolo',
-    demo: '/videoDemos'
+    demo: 'https://remolo-pizzas.vercel.app/'
   },
   {
     id: '108',
