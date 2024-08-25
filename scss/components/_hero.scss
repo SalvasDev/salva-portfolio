@@ -3,17 +3,17 @@
   display: flex;
 
   @media screen and (max-width: 1047px) {
-      margin-top: 15rem;
-      width: 80%;
-    }
+    margin-top: 15rem;
+    width: 80%;
+  }
 
-    @include from(ts) {
-      width: 100%;
-    }
+  @include from(ts) {
+    width: 100%;
+  }
 
-    @include from(mobl) {
-      margin-top: 10rem;
-    }
+  @include from(mobl) {
+    margin-top: 10rem;
+  }
 }
 
 .hero__contain {
@@ -24,23 +24,22 @@
     padding: 0;
     margin-left: 3rem;
   }
-
 }
 
 .main__title {
   font-size: calc(95px + (130 - 95) * ((100vw - 375px) / (1920 - 300)));
   line-height: 11rem;
-  font-family: 'AvertaBold', 'Poppins', sans-serif;
+  font-family: "AvertaBold", "Poppins", sans-serif;
   font-weight: 600;
-  margin: 0;  
+  margin: 0;
   color: var(--title);
   z-index: 10;
-  animation-delay: .8s;
+  animation-delay: 0.8s;
   letter-spacing: -2px;
 
-  @media screen and  (max-width: 1047px) {
-    font-size: calc(95px + (130 - 95) * ((100vw - 375px) / (1920 - 300)));   
-  }   
+  @media screen and (max-width: 1047px) {
+    font-size: calc(95px + (130 - 95) * ((100vw - 375px) / (1920 - 300)));
+  }
 
   @media screen and (max-width: 922px) {
     font-size: calc(95px + (100 - 95) * ((100vw - 375px) / (1920 - 300)));
@@ -53,13 +52,13 @@
 }
 
 .main__subtitle {
-  font-family: 'AvertaReg', 'Poppins', sans-serif;
+  font-family: "AvertaReg", "Poppins", sans-serif;
   font-weight: 500;
-  font-size: 3.2rem;  
+  font-size: 3.2rem;
   letter-spacing: 4px;
   margin-top: 2rem;
   margin-bottom: 0;
-  animation-delay: .6s;
+  animation-delay: 0.6s;
   display: inline-block;
 
   @include from(t) {
@@ -69,7 +68,6 @@
   @include from(mobl) {
     font-size: 1.8rem;
   }
-
 }
 
 .hero__gradients {
@@ -83,32 +81,31 @@
 .arrow {
   margin-top: 4rem;
   margin-left: 1rem;
-  animation-delay: .2s;
+  animation-delay: 0.2s;
   cursor: pointer;
-  
+
   @include from(mobl) {
-      width: 8rem;
-    }
+    width: 8rem;
+  }
 
   &:hover {
-     filter: var(--arrow-filter);
-     opacity: .5;
+    filter: var(--arrow-filter);
+    opacity: 0.5;
   }
 }
 
-
-.arrow__btn {  
+.arrow__btn {
   transform: rotate(180deg);
-  margin-top: 1.5rem;
-  margin-left: 1.5rem;
-  filter: invert(0%) sepia(99%) saturate(3%) hue-rotate(148deg) brightness(99%) contrast(101%);
+  margin-top: 0.9rem;
+  margin-left: 0.7rem;
+  filter: invert(0%) sepia(99%) saturate(3%) hue-rotate(148deg) brightness(99%)
+    contrast(101%);
   &:hover {
-    filter: invert(0%) sepia(99%) saturate(3%) hue-rotate(148deg) brightness(99%) contrast(101%);
+    filter: invert(0%) sepia(99%) saturate(3%) hue-rotate(148deg)
+      brightness(99%) contrast(101%);
     opacity: 1;
   }
 }
-
-
 
 .btn__talk {
   display: block;
@@ -124,15 +121,14 @@
   cursor: pointer;
   transition: all 200ms ease;
   letter-spacing: 1px;
-  animation-delay: .4s;
+  animation-delay: 0.4s;
 
   @include from(mobl) {
-      width: 12rem;
-      height: 3.8rem;
-    }
-
+    width: 12rem;
+    height: 3.8rem;
+  }
 
   &:hover {
     background-color: aquamarine;
-  }  
+  }
 }

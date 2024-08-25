@@ -128,24 +128,24 @@ export const dbProjects = [
     code: "https://github.com/SalvasDev/Pizzas-Don-Remolo",
     demo: "https://remolo-pizzas.vercel.app/",
   },
-  // {
-  //   id: '108',
-  //   area: "web",
-  //   name: "Pokémon app",
-  //   designed: "Fernando Herrera",
-  //   developed: "Salvador Sánchez",
-  //   thumbnail: "/img/pokemon/thumb-pokemon.png",
-  //   pics:
-  //     [
-  //       '/img/pokemon/pokemon-home.png',
-  //       '/img/pokemon/pokemon-detail.png',
-  //       '/img/pokemon/pokemon-favorites.png',
-
-  //     ],
-  //   description: "<p><strong>Pokemon App</strong> es una aplicación web que extrae pokemons de una api y los muestra con un renderizado estatico de lado del servidor para servir la información en tiempo de producción.<br/> <br/>Para su realización utilizamos diversas tecnologías como: Next.js y Next UI. La gestión de versiones se realizó con Git y Github.</p>",
-  //   code: 'https://github.com/SalvasDev/02-pokemon-static',
-  //   demo: 'https://02-pokemon-static-sigma.vercel.app/'
-  // },
+  {
+    id: "108",
+    area: "web",
+    name: "Pomodoro app",
+    designed: "Bellerini comunidade",
+    developed: "Salvador Sánchez",
+    thumbnail: "/img/pomodoro/thumbnail-pomodoro.png",
+    pics: [
+      "/img/pomodoro/pomodoro-1.png",
+      "/img/pomodoro/pomodoro-2.png",
+      "/img/pomodoro/pomodoro-3.png",
+      "/img/pomodoro/pomodoro-4.png",
+    ],
+    description:
+      "<p><strong>Pomodoro App</strong> es una aplicación web que te ayuda a ser más productivo.<br/> <br/>Para su realización utilizé diversas tecnologías como: React, Tailwind y el manejo de estados globales con Redux Toolkit. La gestión de versiones se realizó con Git y Github.</p>",
+    code: "https://github.com/SalvasDev/pomodoro-app",
+    demo: "https://pomodoro-app-sal.vercel.app/",
+  },
   {
     id: "109",
     area: "web",

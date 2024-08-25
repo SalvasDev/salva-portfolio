@@ -6,150 +6,145 @@
 
 .menu__title {
   font-size: 2.4rem;
-  margin: 0; 
-  margin-top: -.5rem;
-  z-index: 20;  
-      @include from(mobl) {
-       display: none;
-    }
+  margin: 0;
+  margin-top: -0.5rem;
+  z-index: 20;
+  @include from(mobl) {
+    display: none;
+  }
 }
 
 .muenu__container {
-    justify-self: center;
-    height: 100%;
-    width: 100%;
+  justify-self: center;
+  height: 100%;
+  width: 100%;
 }
 
 // This is to show the burger button
 
 .btn-burg {
-    display: flex;
-    flex-direction: column;
-    margin-top: .5rem;
-    width: 2.5rem;
-    height: 2.5rem;
-    gap: .7rem;
-    padding: 0;
-    border: none;
-    background: transparent;
-    cursor: pointer;     
- 
- 
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  gap: 0.7rem;
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+
   .line1__btn-burg,
   .line2__btn-burg,
   .line3__btn-burg {
-        background: var(--main-color);
-        height: .2rem;
-        width: 100%;
-        border-radius: 5px;
-        transform-origin: left;
-        transition: all .5s;
-    }
+    background: var(--main-color);
+    height: 0.2rem;
+    width: 100%;
+    border-radius: 5px;
+    transform-origin: left;
+    transition: all 0.5s;
+  }
 }
 
 .activeline1__btn-burg {
-    transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
 .activeline2__btn-burg {
-    opacity: 0;
-    margin-left: -3rem;
+  opacity: 0;
+  margin-left: -3rem;
 }
 
-.activeline3__btn-burg {    
-    transform: rotate(-45deg);
+.activeline3__btn-burg {
+  transform: rotate(-45deg);
 }
 
 .menu__bg {
-    display: none;
-    position: absolute;
-    width: 100%;
-    height: 100vh;
-    left: 0;
-    top: 0;
-    opacity: 0;
-    z-index: 12;
-    background-color: var(--bg-color); 
-    transition: all .1s ease-in-out;
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  z-index: 12;
+  background-color: var(--bg-color);
+  transition: all 0.1s ease-in-out;
 }
-
 
 .menu__container {
-    z-index: 15;
+  z-index: 15;
 }
 
-.active__container { 
-    display: flex;
-    position: fixed;
-    opacity: 1;
+.active__container {
+  display: flex;
+  position: fixed;
+  opacity: 1;
 }
 
-
-// Esto es para mostra el texto del menú
 .showMenuMobile {
-    display: none;
-    position: absolute;
-    text-decoration: none;
-    top: 53%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    gap: 5rem;
-    z-index: 2;
+  display: none;
+  position: absolute;
+  text-decoration: none;
+  top: 53%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  gap: 5rem;
+  z-index: 2;
 }
 
 .showMenuMobile a {
-    position: relative;
-    text-decoration: none;
-    color: var(--main-color);
-    font-family: 'Poppins','AvertaReg', 'sans-serif';
-    font-weight: 400;
-    font-size: 3.8rem;
-    animation-duration: .7s;
+  position: relative;
+  text-decoration: none;
+  color: var(--main-color);
+  font-family: "Poppins", "AvertaReg", "sans-serif";
+  font-weight: 400;
+  font-size: 3.8rem;
+  animation-duration: 0.7s;
 
-    @include from(t) {
-        font-size: 3.6rem;
-    }
+  @include from(t) {
+    font-size: 3.6rem;
+  }
 
-    &:first-child {
-        width: 65%;
-        align-self: center;
-    }
+  &:first-child {
+    width: 65%;
+    align-self: center;
+  }
 
-    &:last-child {
-      width: 95%;
-      align-self: center;
-    }
+  &:last-child {
+    width: 95%;
+    align-self: center;
+  }
 }
 
 .showMenuMobile a:before {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 3px;
-    top: 6rem;
-    left: 50%;
-    background-color: var(--accent-color);
-    transition: all 400ms ease-in-out;
-    transform-origin: left;
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  top: 6rem;
+  left: 50%;
+  background-color: var(--accent-color);
+  transition: all 400ms ease-in-out;
+  transform-origin: left;
 }
 
 .showMenuMobile a:hover:before {
-    width: 100%;
-    left: 0%;
+  width: 100%;
+  left: 0%;
 }
 
 .active__menu {
-    display: flex;
-    flex-direction: column;
-    opacity: 1;
-    z-index: 20;
-    position: fixed;
+  display: flex;
+  flex-direction: column;
+  opacity: 1;
+  z-index: 20;
+  position: fixed;
 }
 
 .header__fixed {
-    position: fixed;
-    z-index: 20;
-    top: 0;
+  position: fixed;
+  z-index: 20;
+  top: 0;
 }
-

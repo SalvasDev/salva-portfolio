@@ -7,7 +7,7 @@
   padding-left: 3rem;
 
   @media (max-width: 666px) {
-    row-gap: 2rem;  
+    row-gap: 2rem;
     padding-left: 0;
     padding-right: 0;
   }
@@ -16,7 +16,6 @@
 .thumbnail__container {
   width: 100%;
   position: relative;
-
 }
 
 .thumbnail {
@@ -24,24 +23,23 @@
   height: 100%;
 }
 
-.thumbnail__over {   
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: var(--main-color);
-      opacity: 0;
-      z-index: var(--z-toolltip);
-      transition: all 300ms ease-in-out;
-    
-    &:hover {
-      opacity: 1;
-    }
+.thumbnail__over {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--main-color);
+  opacity: 0;
+  z-index: var(--z-toolltip);
+  transition: all 300ms ease-in-out;
 
-    }
+  &:hover {
+    opacity: 1;
+  }
+}
 
- .thumbnail__title {
+.thumbnail__title {
   position: absolute;
   font-size: 1.8rem;
   text-align: center;
@@ -52,4 +50,4 @@
   left: 50%;
   transform: translate(-50%, -50%);
   color: var(--negative-color);
- }   
+}
