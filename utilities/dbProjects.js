@@ -1,8 +1,25 @@
 export const dbProjects = [
   // ////////////////////////////////////////////////////////////////////////////////
   // Database for web
+  { id: "101",
+    area: "web",
+    name: "Turno Vivo",
+    designed: "Salvador Sánchez",
+    developed: "Salvador Sánchez",
+    thumbnail: "/img/turno-vivo/thumb-turno-vivo.png",
+    pics: [
+      "/img/turno-vivo/01-home.png",
+      "/img/turno-vivo/02-design-system.png",
+      "/img/turno-vivo/03-booking.png",
+      "/img/turno-vivo/04-admin.png",
+    ],
+    description:
+      "<p><strong>Turno Vivo</strong> es una demo funcional para mostrar reservas, lista de espera, cancelaciones y manejo de slots con Redis y Spring boot. Diseñada como MVP de portafolio, lista para que alguien entre, pruebe el flujo y entienda el valor en pocos minutos.</p>",
+    code: "https://github.com/SalvasDev/turnovivo-frontend",
+    demo: "https://turnovivo.vercel.app/",
+  },
   {
-    id: "101",
+    id: "102",
     area: "web",
     name: "Mountain",
     designed: "",
@@ -22,7 +39,7 @@ export const dbProjects = [
   },
 
   {
-    id: "102",
+    id: "103",
     area: "web",
     name: "Edie Homepage",
     designed: "Thu Nghiem",
@@ -44,7 +61,7 @@ export const dbProjects = [
   },
 
   {
-    id: "103",
+    id: "104",
     area: "web",
     name: "Analytics",
     designed: "Figma community",
@@ -63,7 +80,7 @@ export const dbProjects = [
     demo: "https://analytics-sal.netlify.app/",
   },
   {
-    id: "104",
+    id: "105",
     area: "web",
     name: "Vitalinea",
     designed: "IA Interactive",
@@ -79,9 +96,8 @@ export const dbProjects = [
     code: "https://github.com/SalvasDev/vitalinea",
     demo: "https://vitalinea-salvador.netlify.app",
   },
-
   {
-    id: "105",
+    id: "106",
     area: "web",
     name: "Remo jobs",
     designed: "Thu Nghiem",
@@ -98,38 +114,7 @@ export const dbProjects = [
     demo: "https://remo-jobs.netlify.app/",
   },
   {
-    id: "106",
-    area: "web",
-    name: "Weather app",
-    designed: "Thu Nghiem",
-    developed: "Salvador Sánchez",
-    thumbnail: "/img/weather-app/thumb-weather-app.png",
-    pics: ["/img/weather-app/weather-app-1.png"],
-    description:
-      "<p><strong>Weather app</strong> es una aplicación para consultar el clima en muchas ciudades del mundo. Esta aplicación utiliza varias consultas de API. <br/> <br/>Para su realización utilicé diversas tecnologías, como JavaScript con la biblioteca React, componentes de estilo CSS3 y JSX para crear la interfaz de usuario. La gestión de versiones se realizó con Git y Github, y la aplicación se implementó en Netlify.</p>",
-    code: "https://github.com/SalvasDev/weather-app",
-    demo: "https://weather-app-sal.netlify.app/",
-  },
-  {
     id: "107",
-    area: "web",
-    name: "Pizzas Don Remolo",
-    designed: "Paola Rivero y Salvador Sánchez",
-    developed: "Salvador Sánchez",
-    thumbnail: "/img/don-remolo/thumb-don-remolo.png",
-    pics: [
-      "/img/don-remolo/loading.png",
-      "/img/don-remolo/menu.png",
-      "/img/don-remolo/pizzas.png",
-      "/img/don-remolo/cart.png",
-    ],
-    description:
-      "<p><strong>Don Remolo Pizzas</strong> es una aplicación web para vender pizzas y otros alimentos.<br/> <br/>Para su realización utilizamos diversas tecnologías como: Next.js, Material UI, Node y Mongodbon. La gestión de versiones se realizó con Git y Github.</p>",
-    code: "https://github.com/SalvasDev/Pizzas-Don-Remolo",
-    demo: "https://remolo-pizzas.vercel.app/",
-  },
-  {
-    id: "108",
     area: "web",
     name: "Pomodoro app",
     designed: "Bellerini comunidade",
@@ -145,21 +130,5 @@ export const dbProjects = [
       "<p><strong>Pomodoro App</strong> es una aplicación web que te ayuda a ser más productivo.<br/> <br/>Para su realización utilizé diversas tecnologías como: React, Tailwind y el manejo de estados globales con Redux Toolkit. La gestión de versiones se realizó con Git y Github.</p>",
     code: "https://github.com/SalvasDev/pomodoro-app",
     demo: "https://pomodoro-app-sal.vercel.app/",
-  },
-  {
-    id: "109",
-    area: "web",
-    name: "OpenJira app",
-    designed: "Fernando Herrera",
-    developed: "Salvador Sánchez",
-    thumbnail: "/img/open-jira/thumb-openjira.png",
-    pics: [
-      "/img/open-jira/openjira-home.png",
-      "/img/open-jira/openjira-edition.png",
-    ],
-    description:
-      "<p><strong>OpenJira app</strong> es una aplicación web que nos permite agregar, editar y eliminar tareas así como modificar su status modificando su etiqueta o arrastrando a la columna deseada.<br/> <br/>Para su realización utilizamos diversas tecnologías como: Next.js y Material UI para el front-end y Nodejs y Mongodb para el backend. La gestión de versiones se realizó con Git y Github.</p>",
-    code: "https://github.com/SalvasDev/03-open-jira",
-    demo: "https://03-open-jira-taupe.vercel.app/",
-  },
+  }
 ];
