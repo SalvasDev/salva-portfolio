@@ -10,8 +10,8 @@ export const dbProjects = [
     pics: [
       "/img/turno-vivo/01-home.png",
       "/img/turno-vivo/02-design-system.png",
-      "/img/turno-vivo/03-booking.png",
-      "/img/turno-vivo/04-admin.png",
+      "/img/turno-vivo/03-code.png",
+      "/img/turno-vivo/04-booking.png",
     ],
     description:
       "<p><strong>Turno Vivo</strong> es una demo funcional para mostrar reservas, lista de espera, cancelaciones y manejo de slots con Redis y Spring boot. Diseñada como MVP de portafolio, lista para que alguien entre, pruebe el flujo y entienda el valor en pocos minutos.</p>",
